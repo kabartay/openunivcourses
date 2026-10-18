@@ -53,57 +53,6 @@
     - { year: 2023, url: "https://www.youtube.com/playlist?list=PLXV9Vh2jYcjZAHAuGmQWCc14F6Gs1o4Yt", video: true }
     - { year: 2024, url: "https://ocw.mit.edu/courses/6-s087-foundation-models-and-generative-ai-january-iap-2024/" }
 
-- id: mit-9-520
-  university: mit
-  code: "9.520"
-  aliases: ["6.7910", "6.860"]
-  title: Statistical Learning Theory and Applications
-  description: "Graduate statistical learning theory: regularization and kernel methods through the theory of deep networks, approximation and optimization."
-  topics: [learning-theory, math-for-ml, machine-learning]
-  level: advanced
-  editions:
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI", video: true }
-    - { year: 2017, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iCXhuP9W-BQ9q2RkEIA5I5f", video: true }
-    - { year: 2015, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O", video: true }
-    - { year: 2026, term: F, url: "https://poggio-lab.mit.edu/9-520" }
-    - { year: 2019, term: F, url: "https://www.mit.edu/~9.520/fall19/" }
-    - { year: 2018, term: F, url: "https://www.mit.edu/~9.520/fall18/" }
-    - { year: 2017, term: F, url: "https://www.mit.edu/~9.520/fall17/" }
-    - { year: 2016, term: F, url: "https://www.mit.edu/~9.520/fall16/" }
-
-- id: mit-6-8701
-  university: mit
-  code: "6.8701"
-  aliases: ["6.8700", "6.047", "6.878"]
-  title: Machine Learning for Computational Biology
-  description: Foundations and frontiers of machine learning, statistical, and algorithmic techniques for understanding the human genome.
-  topics: [biology, machine-learning, probabilistic-models]
-  level: intermediate
-  editions:
-    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc", video: true }
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ", video: true }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6U5uQOCHjP9Op3gpa177fK", video: true }
-    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt", video: true }
-    - { year: 2015, term: F, url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/" }
-
-- id: mit-6-7930
-  university: mit
-  code: "6.7930"
-  aliases: [HST.956, 6.S897]
-  title: Machine Learning for Healthcare
-  description: Applied machine learning in healthcare, covering clinical prediction, medical imaging analysis, and data challenges with real-world case studies.
-  topics: [healthcare, machine-learning]
-  level: advanced
-  editions:
-    - { year: 2019, term: S, url: "https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j", video: true }
-    - { year: 2025, term: S, url: "https://mlhcmit.github.io/" }
-    - { year: 2024, term: S, url: "https://mlhcmit.github.io/2024/" }
-    - { year: 2023, term: S, url: "https://mlhcmit.github.io/2023/" }
-    - { year: 2022, term: S, url: "https://mlhcmit.github.io/2022/" }
-    - { year: 2021, term: S, url: "https://mlhcmit.github.io/2021/" }
-    - { year: 2020, term: S, url: "https://mlhcmit.github.io/2020/" }
-    - { year: 2019, term: S, url: "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/" }
-
 - id: mit-6-874
   university: mit
   code: "6.874"
@@ -175,6 +124,57 @@
     - { year: 2021, term: S, url: "https://www.mit.edu/~jda/teaching/6.864/sp21/" }
     - { year: 2020, term: S, url: "https://www.mit.edu/~jda/teaching/6.864/sp20/" }
     - { year: 2005, term: F, url: "https://ocw.mit.edu/courses/6-864-advanced-natural-language-processing-fall-2005/pages/syllabus/" }
+
+- id: mit-9-520
+  university: mit
+  code: "9.520"
+  aliases: ["6.7910", "6.860"]
+  title: Statistical Learning Theory and Applications
+  description: "Graduate statistical learning theory: regularization and kernel methods through the theory of deep networks, approximation and optimization."
+  topics: [learning-theory, math-for-ml, machine-learning]
+  level: advanced
+  editions:
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI", video: true }
+    - { year: 2017, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iCXhuP9W-BQ9q2RkEIA5I5f", video: true }
+    - { year: 2015, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O", video: true }
+    - { year: 2026, term: F, url: "https://poggio-lab.mit.edu/9-520" }
+    - { year: 2019, term: F, url: "https://www.mit.edu/~9.520/fall19/" }
+    - { year: 2018, term: F, url: "https://www.mit.edu/~9.520/fall18/" }
+    - { year: 2017, term: F, url: "https://www.mit.edu/~9.520/fall17/" }
+    - { year: 2016, term: F, url: "https://www.mit.edu/~9.520/fall16/" }
+
+- id: mit-6-8701
+  university: mit
+  code: "6.8701"
+  aliases: ["6.8700", "6.047", "6.878"]
+  title: Machine Learning for Computational Biology
+  description: Foundations and frontiers of machine learning, statistical, and algorithmic techniques for understanding the human genome.
+  topics: [biology, machine-learning, probabilistic-models]
+  level: intermediate
+  editions:
+    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc", video: true }
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ", video: true }
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6U5uQOCHjP9Op3gpa177fK", video: true }
+    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt", video: true }
+    - { year: 2015, term: F, url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/" }
+
+- id: mit-6-7930
+  university: mit
+  code: "6.7930"
+  aliases: [HST.956, 6.S897]
+  title: Machine Learning for Healthcare
+  description: Applied machine learning in healthcare, covering clinical prediction, medical imaging analysis, and data challenges with real-world case studies.
+  topics: [healthcare, machine-learning]
+  level: advanced
+  editions:
+    - { year: 2019, term: S, url: "https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j", video: true }
+    - { year: 2025, term: S, url: "https://mlhcmit.github.io/" }
+    - { year: 2024, term: S, url: "https://mlhcmit.github.io/2024/" }
+    - { year: 2023, term: S, url: "https://mlhcmit.github.io/2023/" }
+    - { year: 2022, term: S, url: "https://mlhcmit.github.io/2022/" }
+    - { year: 2021, term: S, url: "https://mlhcmit.github.io/2021/" }
+    - { year: 2020, term: S, url: "https://mlhcmit.github.io/2020/" }
+    - { year: 2019, term: S, url: "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/" }
 
 - id: mit-6-7920
   university: mit
