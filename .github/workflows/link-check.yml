@@ -1,0 +1,83 @@
+name: Link check
+
+# Weekly check of every course link. Problems go into one issue titled "Broken course links",
+# which later runs update, and which is closed automatically once every link works again.
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    env:
+      TITLE: Broken course links
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Course pages. 429 (rate limited) is tolerated; 403 is not, since a page moved behind
+      # a login answers 403.
+      - name: Check course pages
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: >-
+            --no-progress --max-concurrency 8 --timeout 30 --max-retries 2
+            --accept 200..=299,429
+            --exclude '^https://(www\.)?youtube\.com/'
+            --user-agent "Mozilla/5.0 (compatible; openunivcourses-link-check)"
+            src/data/courses.yaml src/data/universities.yaml
+          output: ./lychee-report.md
+          fail: false
+
+      # YouTube answers 200 even for a deleted playlist, so those links are checked through oEmbed.
+      - name: Check YouTube links
+        id: youtube
+        run: node scripts/check-youtube.mjs ./youtube-report.md || echo "broken=true" >> "$GITHUB_OUTPUT"
+
+      - name: Combine the reports
+        id: report
+        run: |
+          broken=false
+          { echo "Found by the weekly [link check](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})."; echo; } > report.md
+          if [ "${{ steps.lychee.outputs.exit_code }}" != "0" ]; then cat lychee-report.md >> report.md; echo >> report.md; broken=true; fi
+          if [ "${{ steps.youtube.outputs.broken }}" = "true" ]; then cat youtube-report.md >> report.md; broken=true; fi
+          echo "broken=$broken" >> "$GITHUB_OUTPUT"
+
+      - name: Find the open report issue
+        id: existing
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --repo "${{ github.repository }}" --state open --author app/github-actions \
+            --json number,title --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update the report issue
+        if: steps.report.outputs.broken == 'true'
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+        with:
+          title: ${{ env.TITLE }}
+          content-filepath: ./report.md
+          issue-number: ${{ steps.existing.outputs.number }}
+          labels: broken-links
+
+      - name: Close the report issue once every link works
+        if: steps.report.outputs.broken == 'false' && steps.existing.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue close "${{ steps.existing.outputs.number }}" --repo "${{ github.repository }}" --comment "Every course link works again (run ${{ github.run_id }})."

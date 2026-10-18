@@ -1,9 +1,10 @@
 name: Release
 
+# Pushing a tag such as v2.0.0 builds the site and attaches the built files to a GitHub Release.
 on:
   push:
     tags:
-      - "v*.*.*"
+      - 'v*.*.*'
 
 permissions:
   contents: write
@@ -11,16 +12,25 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install and build
+        run: npm ci && npm run build
+
+      - name: Bundle the site
+        run: cd dist && zip -r ../openunivcourses-${{ github.ref_name }}.zip .
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64 # v3.0.3
         with:
           name: Release ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
-          files: dist/*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          files: openunivcourses-${{ github.ref_name }}.zip

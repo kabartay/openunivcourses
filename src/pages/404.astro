@@ -1,0 +1,15 @@
+---
+import Base from '../layouts/Base.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<Base title="Page not found · Free ML Courses" description="This page does not exist." noindex>
+  <div class="container">
+    <header class="header">
+      <h1>Page not found</h1>
+      <p>The page you were looking for isn't here. The course list is on the home page.</p>
+      <p><a class="button" href={base}>Browse the courses</a></p>
+    </header>
+  </div>
+</Base>

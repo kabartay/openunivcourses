@@ -1,0 +1,38 @@
+# Universities, in the order they appear on the page.
+# logo: a file in public/images/logos/
+
+- id: mit
+  name: Massachusetts Institute of Technology
+  short: MIT
+  logo: mit.svg
+  website: https://www.mit.edu
+
+- id: stanford
+  name: Stanford University
+  short: Stanford
+  logo: stanford.png
+  website: https://www.stanford.edu
+
+- id: berkeley
+  name: University of California, Berkeley
+  short: UC Berkeley
+  logo: berkeley.png
+  website: https://www.berkeley.edu
+
+- id: cmu
+  name: Carnegie Mellon University
+  short: CMU
+  logo: cmu.png
+  website: https://www.cmu.edu
+
+- id: nyu
+  name: New York University
+  short: NYU
+  logo: nyu.png
+  website: https://www.nyu.edu
+
+- id: uchicago
+  name: University of Chicago
+  short: UChicago
+  logo: uchicago.jpg
+  website: https://www.uchicago.edu

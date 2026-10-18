@@ -1,0 +1,23 @@
+{
+  "name": "openunivcourses",
+  "private": true,
+  "type": "module",
+  "description": "Free machine-learning courses from leading universities, in one searchable page.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "validate": "node scripts/validate-data.mjs",
+    "build": "npm run validate && astro build",
+    "preview": "astro preview",
+    "check:youtube": "node scripts/check-youtube.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.5"
+  },
+  "devDependencies": {
+    "js-yaml": "4.3.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,22 @@
+name: Report a broken or outdated link
+description: A course link that no longer works, or points to the wrong year.
+title: "Broken link: "
+labels: [broken-links]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course
+      placeholder: "CS234: Reinforcement Learning"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: The link that is wrong
+    validations:
+      required: true
+  - type: input
+    id: fix
+    attributes:
+      label: Correct link, if you know it
