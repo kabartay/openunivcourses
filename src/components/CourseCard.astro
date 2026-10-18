@@ -27,6 +27,9 @@ const SEASON: Record<string, string> = { W: '\u2744\uFE0E', S: '\u273F', U: '\u2
 const yearText = (year: number, video = false) => (video ? `YT${String(year).slice(-2)}` : `${year}`);
 const label = (year: number, term?: string, video = false) => yearText(year, video) + (term ?? '');
 const spoken = (year: number, term?: string) => (term ? `${TERM[term]} ${year}` : `${year}`);
+// Starts with the visible text ("YT25 Fall"), so speech commands that say what is on screen work.
+const aria = (e: (typeof course.editions)[number], kind: string) =>
+  `${[yearText(e.year, e.video), e.term && TERM[e.term]].filter(Boolean).join(' ')}, ${kind}, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`;
 // Editions can be listed in any order in the YAML; show lecture videos first, then course pages,
 // each newest first.
 const ordered = (list: typeof course.editions) =>
@@ -48,13 +51,13 @@ const searchText = [
   <div class="course-links">
     {videos.map((e) => (
       <a href={e.url} class="course-link video-link" target="_blank" rel="noopener noreferrer"
-         aria-label={`${yearText(e.year, true)} ${e.term ? TERM[e.term] : ''}, lecture videos, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`.replace('  ', ' ')}>
+         aria-label={aria(e, 'lecture videos')}>
         {yearText(e.year, true)}{e.term && <span class={`season season--${e.term.toLowerCase()}`} aria-hidden="true">{SEASON[e.term]}</span>}
       </a>
     ))}
     {sites.map((e) => (
       <a href={e.url} class="course-link" target="_blank" rel="noopener noreferrer"
-         aria-label={`${yearText(e.year)} ${e.term ? TERM[e.term] : ''}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`.replace('  ', ' ')}>
+         aria-label={aria(e, 'course page')}>
         {yearText(e.year)}{e.term && <span class={`season season--${e.term.toLowerCase()}`} aria-hidden="true">{SEASON[e.term]}</span>}
       </a>
     ))}

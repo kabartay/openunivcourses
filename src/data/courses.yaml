@@ -612,6 +612,7 @@
   topics: [programming]
   level: intro
   editions:
+    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL0my2vWlgboySadi9ApfZCNIDV2O5TSDh", video: true }
     - { year: 2026, term: F, url: "https://cs61a.org/fa26/" }
 
 - id: berkeley-cs-61b

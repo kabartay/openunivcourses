@@ -34,7 +34,7 @@ Type in the search bar to filter by course name, university or topic.
 
 ## What's in it
 
-**58 courses from 7 universities**, with 371 yearly editions from 2005 to 2026, 89 of them lecture-video playlists.
+**58 courses from 7 universities**, with 372 yearly editions from 2005 to 2026, 90 of them lecture-video playlists.
 
 | University | Courses |
 | --- | --- |
