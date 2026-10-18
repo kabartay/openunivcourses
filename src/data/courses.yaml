@@ -17,9 +17,9 @@
   topics: [machine-learning]
   level: intro
   editions:
+    - { year: 2020, term: F, url: "https://tamarabroderick.com/ml.html", video: true }
     - { year: 2020, term: F, url: "https://ocw.mit.edu/courses/6-036-introduction-to-machine-learning-fall-2020/" }
     - { year: 2019, url: "https://openlearninglibrary.mit.edu/courses/course-v1:MITx+6.036+1T2019/about" }
-    - { year: 2020, term: F, url: "https://tamarabroderick.com/ml.html", video: true }
 
 - id: mit-6-s191
   university: mit
@@ -29,6 +29,7 @@
   topics: [deep-learning, generative-models, computer-vision]
   level: intro
   editions:
+    - { year: 2026, url: "https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI", video: true }
     - { year: 2026, url: "https://introtodeeplearning.com/2026/index.html" }
     - { year: 2025, url: "https://introtodeeplearning.com/2025/index.html" }
     - { year: 2024, url: "https://introtodeeplearning.com/2024/index.html" }
@@ -39,7 +40,6 @@
     - { year: 2019, url: "https://introtodeeplearning.com/2019/index.html" }
     - { year: 2018, url: "https://introtodeeplearning.com/2018/index.html" }
     - { year: 2017, url: "https://introtodeeplearning.com/2017/index.html" }
-    - { year: 2026, url: "https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI", video: true }
 
 - id: mit-6-s087
   university: mit
@@ -49,9 +49,9 @@
   topics: [generative-models, llms, ai-foundations]
   level: intro
   editions:
-    - { year: 2024, url: "https://ocw.mit.edu/courses/6-s087-foundation-models-and-generative-ai-january-iap-2024/" }
     - { year: 2024, url: "https://www.youtube.com/playlist?list=PLXV9Vh2jYcjbnv67sXNDJiO8MWLA3ZJKR", video: true }
     - { year: 2023, url: "https://www.youtube.com/playlist?list=PLXV9Vh2jYcjZAHAuGmQWCc14F6Gs1o4Yt", video: true }
+    - { year: 2024, url: "https://ocw.mit.edu/courses/6-s087-foundation-models-and-generative-ai-january-iap-2024/" }
 
 - id: mit-9-520
   university: mit
@@ -62,14 +62,14 @@
   topics: [learning-theory, math-for-ml, machine-learning]
   level: advanced
   editions:
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI", video: true }
+    - { year: 2017, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iCXhuP9W-BQ9q2RkEIA5I5f", video: true }
+    - { year: 2015, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O", video: true }
     - { year: 2026, term: F, url: "https://poggio-lab.mit.edu/9-520" }
     - { year: 2019, term: F, url: "https://www.mit.edu/~9.520/fall19/" }
     - { year: 2018, term: F, url: "https://www.mit.edu/~9.520/fall18/" }
     - { year: 2017, term: F, url: "https://www.mit.edu/~9.520/fall17/" }
     - { year: 2016, term: F, url: "https://www.mit.edu/~9.520/fall16/" }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iB4Xz_EAJNEgGF5I-6OzRNI", video: true }
-    - { year: 2017, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iCXhuP9W-BQ9q2RkEIA5I5f", video: true }
-    - { year: 2015, term: F, url: "https://www.youtube.com/playlist?list=PLyGKBDfnk-iDj3FBd0Avr_dLbrU8VG73O", video: true }
 
 - id: mit-6-8701
   university: mit
@@ -80,11 +80,11 @@
   topics: [biology, machine-learning, probabilistic-models]
   level: intermediate
   editions:
-    - { year: 2015, term: F, url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/" }
     - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca4gtioEPLIExlAKvu64z7rc", video: true }
     - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6dEYlNoZJwBaz__CdsaoKJ", video: true }
     - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6U5uQOCHjP9Op3gpa177fK", video: true }
     - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt", video: true }
+    - { year: 2015, term: F, url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/" }
 
 - id: mit-6-7930
   university: mit
@@ -95,6 +95,7 @@
   topics: [healthcare, machine-learning]
   level: advanced
   editions:
+    - { year: 2019, term: S, url: "https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j", video: true }
     - { year: 2025, term: S, url: "https://mlhcmit.github.io/" }
     - { year: 2024, term: S, url: "https://mlhcmit.github.io/2024/" }
     - { year: 2023, term: S, url: "https://mlhcmit.github.io/2023/" }
@@ -102,7 +103,6 @@
     - { year: 2021, term: S, url: "https://mlhcmit.github.io/2021/" }
     - { year: 2020, term: S, url: "https://mlhcmit.github.io/2020/" }
     - { year: 2019, term: S, url: "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/" }
-    - { year: 2019, term: S, url: "https://www.youtube.com/playlist?list=PLUl4u3cNGP60B0PQXVQyGNdCyCTDU1Q5j", video: true }
 
 - id: mit-6-874
   university: mit
@@ -113,9 +113,9 @@
   topics: [biology, deep-learning]
   level: advanced
   editions:
-    - { year: 2021, url: "https://mit6874.github.io/" }
     - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca5sxV7aE3-PS9fYX3vUdIOX", video: true }
     - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PLypiXJdtIca5ElZMWHl4HMeyle2AzUgVB", video: true }
+    - { year: 2021, url: "https://mit6874.github.io/" }
 
 - id: mit-6-s192
   university: mit
@@ -125,8 +125,8 @@
   topics: [creative-ai, generative-models]
   level: intro
   editions:
-    - { year: 2021, url: "https://ali-design.github.io/deepcreativity/" }
     - { year: 2021, url: "https://www.youtube.com/playlist?list=PLCpMvp7ftsnIbNwRnQJbDNRqO6qiN3EyH", video: true }
+    - { year: 2021, url: "https://ali-design.github.io/deepcreativity/" }
 
 - id: mit-lectures-on-deep-learning-robotics-and-ai-lex-fridman
   university: mit
@@ -145,6 +145,8 @@
   topics: [machine-learning, learning-theory]
   level: intermediate
   editions:
+    - { year: 2019, term: U, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rNH7qL6-efu_q2_bPuy0adh", video: true }
+    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU", video: true }
     - { year: 2026, term: U, url: "https://cs229.stanford.edu/" }
     - { year: 2026, term: S, url: "https://cs229.stanford.edu/index.html-spr26" }
     - { year: 2026, term: W, url: "https://cs229.stanford.edu/index.html-win26" }
@@ -165,8 +167,6 @@
     - { year: 2020, term: F, url: "https://cs229.stanford.edu/syllabus-fall2020.html" }
     - { year: 2019, term: U, url: "https://cs229.stanford.edu/syllabus-summer2019.html" }
     - { year: 2018, term: F, url: "https://cs229.stanford.edu/syllabus-autumn2018.html" }
-    - { year: 2019, term: U, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rNH7qL6-efu_q2_bPuy0adh", video: true }
-    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU", video: true }
 
 - id: stanford-cs231n
   university: stanford
@@ -176,6 +176,8 @@
   topics: [computer-vision, deep-learning]
   level: intermediate
   editions:
+    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16", video: true }
+    - { year: 2017, term: S, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv", video: true }
     - { year: 2026, term: S, url: "https://cs231n.stanford.edu/2026/" }
     - { year: 2025, term: S, url: "https://cs231n.stanford.edu/2025/" }
     - { year: 2024, term: S, url: "https://cs231n.stanford.edu/2024" }
@@ -188,8 +190,6 @@
     - { year: 2017, term: S, url: "https://cs231n.stanford.edu/2017" }
     - { year: 2016, term: W, url: "https://cs231n.stanford.edu/2016" }
     - { year: 2015, term: W, url: "https://cs231n.stanford.edu/2015" }
-    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOmsNzYBMe0gJY2XS8AQg16", video: true }
-    - { year: 2017, term: S, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv", video: true }
 
 - id: stanford-cs224n
   university: stanford
@@ -199,6 +199,11 @@
   topics: [nlp, deep-learning, llms]
   level: intermediate
   editions:
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D", video: true }
+    - { year: 2023, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4", video: true }
+    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ", video: true }
+    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z", video: true }
+    - { year: 2017, term: W, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6", video: true }
     - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1264/" }
     - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1254/" }
     - { year: 2024, term: S, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/" }
@@ -211,11 +216,6 @@
     - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/" }
     - { year: 2017, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1174/" }
     - { year: 2015, term: F, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1162/" }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D", video: true }
-    - { year: 2023, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4", video: true }
-    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ", video: true }
-    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z", video: true }
-    - { year: 2017, term: W, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6", video: true }
 
 - id: stanford-cs230
   university: stanford
@@ -225,9 +225,9 @@
   topics: [deep-learning]
   level: intro
   editions:
-    - { year: 2025, term: F, url: "https://cs230.stanford.edu/" }
     - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X", video: true }
     - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb", video: true }
+    - { year: 2025, term: F, url: "https://cs230.stanford.edu/" }
 
 - id: stanford-cs234
   university: stanford
@@ -237,6 +237,8 @@
   topics: [reinforcement-learning]
   level: intermediate
   editions:
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX", video: true }
+    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u", video: true }
     - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1264/" }
     - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1254/" }
     - { year: 2024, term: S, url: "https://web.stanford.edu/class/cs234/CS234Spr2024/index.html" }
@@ -245,8 +247,6 @@
     - { year: 2020, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1204/" }
     - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1194/" }
     - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1184/" }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX", video: true }
-    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u", video: true }
 
 - id: stanford-cs236
   university: stanford
@@ -256,11 +256,11 @@
   topics: [generative-models, deep-learning, probabilistic-models]
   level: advanced
   editions:
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8", video: true }
     - { year: 2023, term: F, url: "https://deepgenerativemodels.github.io/" }
     - { year: 2021, term: F, url: "https://deepgenerativemodels.github.io/2021/" }
     - { year: 2019, term: F, url: "https://deepgenerativemodels.github.io/2019/" }
     - { year: 2018, term: F, url: "https://deepgenerativemodels.github.io/2018/" }
-    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8", video: true }
 
 - id: stanford-cs336
   university: stanford
@@ -270,11 +270,11 @@
   topics: [llms, nlp, deep-learning]
   level: advanced
   editions:
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV", video: true }
+    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_", video: true }
     - { year: 2026, term: S, url: "https://cs336.stanford.edu/" }
     - { year: 2025, term: S, url: "https://cs336.stanford.edu/spring2025/" }
     - { year: 2024, term: S, url: "https://cs336.stanford.edu/spring2024/index.html" }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV", video: true }
-    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_", video: true }
 
 - id: stanford-cs221
   university: stanford
@@ -284,6 +284,9 @@
   topics: [ai-foundations, machine-learning]
   level: intro
   editions:
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN", video: true }
+    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2", video: true }
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX", video: true }
     - { year: 2026, term: F, url: "https://stanford-cs221.github.io/autumn2026/" }
     - { year: 2026, term: S, url: "https://stanford-cs221.github.io/spring2026/" }
     - { year: 2025, term: F, url: "https://stanford-cs221.github.io/autumn2025/" }
@@ -300,9 +303,6 @@
     - { year: 2020, term: F, url: "https://stanford-cs221.github.io/autumn2020/" }
     - { year: 2020, term: S, url: "https://stanford-cs221.github.io/spring2020/" }
     - { year: 2019, term: F, url: "https://stanford-cs221.github.io/autumn2019/" }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN", video: true }
-    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2", video: true }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX", video: true }
 
 - id: stanford-cs228
   university: stanford
@@ -333,11 +333,11 @@
   topics: [generative-models, deep-learning]
   level: advanced
   editions:
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPIvv4kgBkvu_uygrV3ut_U", video: true }
+    - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP", video: true }
     - { year: 2024, term: S, url: "https://sites.google.com/view/berkeley-cs294-158-sp24/home/" }
     - { year: 2020, term: S, url: "https://sites.google.com/view/berkeley-cs294-158-sp20/home" }
     - { year: 2019, term: S, url: "https://sites.google.com/view/berkeley-cs294-158-sp19/home" }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPIvv4kgBkvu_uygrV3ut_U", video: true }
-    - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PLwRJQ4m4UJjPiJP3691u-qWwPGVKzSlNP", video: true }
 
 - id: berkeley-cs-285
   university: berkeley
@@ -348,12 +348,6 @@
   topics: [reinforcement-learning, deep-learning]
   level: advanced
   editions:
-    - { year: 2026, term: S, url: "https://rail.eecs.berkeley.edu/deeprlcourse/" }
-    - { year: 2023, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/" }
-    - { year: 2022, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa22/" }
-    - { year: 2021, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/" }
-    - { year: 2020, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa20/" }
-    - { year: 2019, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa19/" }
     - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps", video: true }
     - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfX7MaC6C3HcdOf1g337dlC9", video: true }
     - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfXxKgI1GgyV1B_Xa0DxE5eH", video: true }
@@ -361,6 +355,12 @@
     - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A", video: true }
     - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37", video: true }
     - { year: 2017, term: S, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX", video: true }
+    - { year: 2026, term: S, url: "https://rail.eecs.berkeley.edu/deeprlcourse/" }
+    - { year: 2023, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/" }
+    - { year: 2022, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa22/" }
+    - { year: 2021, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/" }
+    - { year: 2020, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa20/" }
+    - { year: 2019, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa19/" }
 
 - id: berkeley-cs-188
   university: berkeley
@@ -370,6 +370,11 @@
   topics: [ai-foundations, machine-learning, reinforcement-learning]
   level: intro
   editions:
+    - { year: 2026, term: F, url: "https://www.youtube.com/playlist?list=PLDdJTMNkoQko", video: true }
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5tSxKiwcZt4LVwN_ek2Kxy", video: true }
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg614q1L8avhmWQPyIR5QOWq", video: true }
+    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg4fg0UAZzU2FeuZrs6XMjkK", video: true }
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv", video: true }
     - { year: 2026, term: F, url: "https://inst.eecs.berkeley.edu/~cs188/fa26/" }
     - { year: 2026, term: S, url: "https://inst.eecs.berkeley.edu/~cs188/sp26/" }
     - { year: 2025, term: F, url: "https://inst.eecs.berkeley.edu/~cs188/fa25/" }
@@ -378,11 +383,6 @@
     - { year: 2024, term: S, url: "https://inst.eecs.berkeley.edu/~cs188/sp24/" }
     - { year: 2023, term: S, url: "https://inst.eecs.berkeley.edu/~cs188/sp23/" }
     - { year: 2022, term: F, url: "https://inst.eecs.berkeley.edu/~cs188/fa22/" }
-    - { year: 2026, term: F, url: "https://www.youtube.com/playlist?list=PLDdJTMNkoQko", video: true }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg5tSxKiwcZt4LVwN_ek2Kxy", video: true }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg614q1L8avhmWQPyIR5QOWq", video: true }
-    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg4fg0UAZzU2FeuZrs6XMjkK", video: true }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLp8QV47qJEg67UTShQ4er4RYQ3rOeDKxv", video: true }
 
 - id: berkeley-cs-189
   university: berkeley
@@ -393,6 +393,7 @@
   topics: [machine-learning, math-for-ml]
   level: intermediate
   editions:
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PL6O6e8d4U_lZZ-bEWiny3TZh18Wv4iCMz", video: true }
     - { year: 2026, term: F, url: "https://eecs189.org/fa26/" }
     - { year: 2026, term: S, url: "https://eecs189.org/sp26/" }
     - { year: 2025, term: F, url: "https://eecs189.org/fa25/" }
@@ -405,7 +406,6 @@
     - { year: 2019, url: "https://people.eecs.berkeley.edu/~jrs/189s19/" }
     - { year: 2018, term: S, url: "https://eecs189.org/sp18/" }
     - { year: 2017, url: "https://people.eecs.berkeley.edu/~jrs/189s17/" }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PL6O6e8d4U_lZZ-bEWiny3TZh18Wv4iCMz", video: true }
 
 - id: berkeley-cs-288
   university: berkeley
@@ -415,13 +415,13 @@
   topics: [nlp, llms]
   level: advanced
   editions:
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLnocShPlK-Fv9YZIX7qdOyc2GJqnT3D-8", video: true }
     - { year: 2026, term: S, url: "https://cal-cs288.github.io/sp26/" }
     - { year: 2024, term: F, url: "https://cal-cs288.github.io/fa24/" }
     - { year: 2023, term: S, url: "https://cal-cs288.github.io/sp23/" }
     - { year: 2022, term: S, url: "https://cal-cs288.github.io/sp22/" }
     - { year: 2021, term: S, url: "https://cal-cs288.github.io/sp21/" }
     - { year: 2020, term: S, url: "https://cal-cs288.github.io/sp20/" }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLnocShPlK-Fv9YZIX7qdOyc2GJqnT3D-8", video: true }
 
 - id: berkeley-cs-182
   university: berkeley
@@ -432,9 +432,9 @@
   topics: [deep-learning]
   level: intermediate
   editions:
+    - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A", video: true }
     - { year: 2022, term: S, url: "https://cs182sp22.github.io/" }
     - { year: 2021, term: S, url: "https://cs182sp21.github.io/" }
-    - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A", video: true }
 
 - id: berkeley-data-c8
   university: berkeley
@@ -482,6 +482,8 @@
   topics: [programming]
   level: intro
   editions:
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD44fDmItR1wrkor8XdfUXC6", video: true }
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqRI8oWOVjY3gyP3yIb1ExM", video: true }
     - { year: 2026, term: F, url: "https://fa26.datastructur.es/" }
     - { year: 2026, term: S, url: "https://sp26.datastructur.es/" }
     - { year: 2025, term: F, url: "https://fa25.datastructur.es/" }
@@ -494,8 +496,6 @@
     - { year: 2021, term: S, url: "https://sp21.datastructur.es/" }
     - { year: 2020, term: F, url: "https://fa20.datastructur.es/" }
     - { year: 2019, term: S, url: "https://sp19.datastructur.es/" }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PL8FaHk7qbOD44fDmItR1wrkor8XdfUXC6", video: true }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLnp31xXvnfRqRI8oWOVjY3gyP3yIb1ExM", video: true }
 
 - id: cmu-11-785
   university: cmu
@@ -505,6 +505,11 @@
   topics: [deep-learning]
   level: intermediate
   editions:
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPwarejN0RmVerKwkwgyvh3r", video: true }
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPxpDVLFdFwXzAS2TH-f-QX8", video: true }
+    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPylfHM6O3cBkRGdSW3m6n1C", video: true }
+    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPwpm8SuB262r4owIkS7NNJj", video: true }
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPxUJzAW0KxNNjGiK_hISFas", video: true }
     - { year: 2026, term: F, url: "https://deeplearning.cs.cmu.edu/F26/index.html" }
     - { year: 2026, term: S, url: "https://deeplearning.cs.cmu.edu/S26/index.html" }
     - { year: 2025, term: F, url: "https://deeplearning.cs.cmu.edu/F25/index.html" }
@@ -516,11 +521,6 @@
     - { year: 2021, url: "https://deeplearning.cs.cmu.edu/S21/index.html" }
     - { year: 2020, term: F, url: "https://deeplearning.cs.cmu.edu/F20/index.html" }
     - { year: 2020, term: S, url: "https://deeplearning.cs.cmu.edu/S20/index.html" }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPwarejN0RmVerKwkwgyvh3r", video: true }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPxpDVLFdFwXzAS2TH-f-QX8", video: true }
-    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPylfHM6O3cBkRGdSW3m6n1C", video: true }
-    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPwpm8SuB262r4owIkS7NNJj", video: true }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLp-0K3kfddPxUJzAW0KxNNjGiK_hISFas", video: true }
 
 - id: cmu-11-611
   university: cmu
@@ -531,11 +531,11 @@
   topics: [nlp, llms]
   level: intermediate
   editions:
+    - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PL4YhK0pT0ZhXteJ2OTzg4vgySjxTU_QUs", video: true }
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PL4YhK0pT0ZhWJvqDbOygrPjzWb-p2b6qp", video: true }
     - { year: 2026, term: F, url: "https://www.cs.cmu.edu/~ehn/11-611/" }
     - { year: 2026, term: S, url: "https://amirsoofi.github.io/11411-NLP-Spring2026/" }
     - { year: 2025, url: "https://reecursion.github.io/11411-11611-nlp-website/" }
-    - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PL4YhK0pT0ZhXteJ2OTzg4vgySjxTU_QUs", video: true }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PL4YhK0pT0ZhWJvqDbOygrPjzWb-p2b6qp", video: true }
 
 - id: cmu-11-711
   university: cmu
@@ -545,6 +545,13 @@
   topics: [nlp, llms]
   level: advanced
   editions:
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD15emhQhNjRLym77-sp2kAx", video: true }
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD2-RuhyacIsODl5iJVgMjI3", video: true }
+    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD3WxQ0FwWMGPS_BcWdcKyZy", video: true }
+    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8D4BeyjwWczukWq9d8PNyZp", video: true }
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8DZprnWryM4nR8IZl1ZXDjg", video: true }
+    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8D0UkqW2fEhgLrnlDW9QK7z", video: true }
+    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8AYSXn_GKVgwXVluCT9chJ6", video: true }
     - { year: 2026, term: S, url: "https://cmu-l3.github.io/anlp-spring2026/" }
     - { year: 2025, term: F, url: "https://cmu-l3.github.io/anlp-fall2025/" }
     - { year: 2025, term: S, url: "https://cmu-l3.github.io/anlp-spring2025/" }
@@ -553,13 +560,6 @@
     - { year: 2023, term: F, url: "https://cmu-anlp.github.io/" }
     - { year: 2022, term: F, url: "https://www.phontron.com/class/anlp2022/" }
     - { year: 2021, term: F, url: "https://www.phontron.com/class/anlp2021/" }
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD15emhQhNjRLym77-sp2kAx", video: true }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD2-RuhyacIsODl5iJVgMjI3", video: true }
-    - { year: 2025, term: S, url: "https://www.youtube.com/playlist?list=PLqC25OT8ZpD3WxQ0FwWMGPS_BcWdcKyZy", video: true }
-    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8D4BeyjwWczukWq9d8PNyZp", video: true }
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8DZprnWryM4nR8IZl1ZXDjg", video: true }
-    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8D0UkqW2fEhgLrnlDW9QK7z", video: true }
-    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8AYSXn_GKVgwXVluCT9chJ6", video: true }
 
 - id: cmu-11-737
   university: cmu
@@ -569,10 +569,10 @@
   topics: [nlp]
   level: advanced
   editions:
-    - { year: 2023, url: "https://www.cs.cmu.edu/~leili/course/11737mnlp23fa/" }
-    - { year: 2022, term: S, url: "https://www.phontron.com/class/multiling2022/" }
     - { year: 2022, term: S, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8BhCpzfdKKdd1OnTfLcyZr7", video: true }
     - { year: 2020, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8CHhppU6n1Q9-04m96D9gt5", video: true }
+    - { year: 2023, url: "https://www.cs.cmu.edu/~leili/course/11737mnlp23fa/" }
+    - { year: 2022, term: S, url: "https://www.phontron.com/class/multiling2022/" }
 
 - id: cmu-11-747
   university: cmu
@@ -582,15 +582,15 @@
   topics: [nlp, deep-learning]
   level: advanced
   editions:
+    - { year: 2021, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8AkaHEJ7lOOrlex-pcxS-XV", video: true }
+    - { year: 2020, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ", video: true }
+    - { year: 2019, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8Ajj7sY6sdtmjgkt7eo2VMs", video: true }
+    - { year: 2018, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE", video: true }
     - { year: 2021, url: "https://phontron.com/class/nn4nlp2021/schedule/class-introduction.html" }
     - { year: 2020, url: "https://www.phontron.com/class/nn4nlp2020/" }
     - { year: 2019, url: "https://www.phontron.com/class/nn4nlp2019/" }
     - { year: 2018, url: "https://www.phontron.com/class/nn4nlp2018/" }
     - { year: 2017, term: F, url: "https://www.phontron.com/class/nn4nlp2017/" }
-    - { year: 2021, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8AkaHEJ7lOOrlex-pcxS-XV", video: true }
-    - { year: 2020, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8CJ7nMxMC8aXv8WqKYwj-aJ", video: true }
-    - { year: 2019, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8Ajj7sY6sdtmjgkt7eo2VMs", video: true }
-    - { year: 2018, url: "https://www.youtube.com/playlist?list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE", video: true }
 
 - id: cmu-11-891
   university: cmu
@@ -611,13 +611,13 @@
   topics: [multimodal, deep-learning]
   level: advanced
   editions:
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW", video: true }
+    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA", video: true }
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNup9YQs_TdLW7DQz-lda0G", video: true }
     - { year: 2026, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2026/" }
     - { year: 2023, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2023/" }
     - { year: 2022, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2022/" }
     - { year: 2020, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2020/" }
-    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW", video: true }
-    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA", video: true }
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNup9YQs_TdLW7DQz-lda0G", video: true }
 
 - id: cmu-10-701
   university: cmu
@@ -627,6 +627,9 @@
   topics: [machine-learning, math-for-ml, probabilistic-models]
   level: intermediate
   editions:
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLsWN0V-b507g7dbQTUvFkKZEqdHR5Fh4P", video: true }
+    - { year: 2014, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsDZCVz2xS7LrExqidHpJM3B", video: true }
+    - { year: 2013, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsACP-WSqgaGLKQXD7HmN-gC", video: true }
     - { year: 2024, url: "https://www.cs.cmu.edu/~hchai2/courses/10701/" }
     - { year: 2023, term: F, url: "https://machinelearningcmu.github.io/F23-10701/" }
     - { year: 2023, term: S, url: "https://www.cs.cmu.edu/~aarti/Class/10701_Spring23/" }
@@ -634,9 +637,6 @@
     - { year: 2020, term: F, url: "https://www.cs.cmu.edu/~epxing/Class/10701-20/" }
     - { year: 2013, url: "https://alex.smola.org/teaching/cmu2013-10-701/" }
     - { year: 2011, term: S, url: "https://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" }
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLsWN0V-b507g7dbQTUvFkKZEqdHR5Fh4P", video: true }
-    - { year: 2014, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsDZCVz2xS7LrExqidHpJM3B", video: true }
-    - { year: 2013, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsACP-WSqgaGLKQXD7HmN-gC", video: true }
 
 - id: cmu-10-703
   university: cmu
@@ -662,8 +662,8 @@
   topics: [ai-foundations, machine-learning, nlp]
   level: intro
   editions:
-    - { year: 2024, url: "https://atcold.github.io/NYU-AISP24/" }
     - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLLHTzKZzVU9cH26X9VQ14lIA0aPwZiZTx", video: true }
+    - { year: 2024, url: "https://atcold.github.io/NYU-AISP24/" }
 
 - id: nyu-ds-ga-1008
   university: nyu
@@ -673,12 +673,12 @@
   topics: [deep-learning, generative-models]
   level: intermediate
   editions:
-    - { year: 2022, term: F, url: "https://atcold.github.io/NYU-DLFL22/" }
-    - { year: 2021, url: "https://atcold.github.io/NYU-DLSP21/" }
-    - { year: 2020, url: "https://atcold.github.io/NYU-DLSP20/" }
     - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PLLHTzKZzVU9d_3TcHbyiAjl5qCbpJR-o0", video: true }
     - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PLLHTzKZzVU9e6xUfG10TkTWApKSZCzuBI", video: true }
     - { year: 2020, term: S, url: "https://www.youtube.com/playlist?list=PLLHTzKZzVU9eaEyErdV26ikyolxOsz6mq", video: true }
+    - { year: 2022, term: F, url: "https://atcold.github.io/NYU-DLFL22/" }
+    - { year: 2021, url: "https://atcold.github.io/NYU-DLSP21/" }
+    - { year: 2020, url: "https://atcold.github.io/NYU-DLSP20/" }
 
 - id: nyu-nyu-ai-school
   university: nyu
@@ -687,11 +687,11 @@
   topics: [ai-foundations, machine-learning]
   level: intro
   editions:
+    - { year: 2022, term: W, url: "https://www.youtube.com/playlist?list=PLK-WVcT88mQ7IaaKl6eNORxhi1S0J0VX2", video: true }
+    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLK-WVcT88mQ5jDsQeEe80i0IKojvP3J_z", video: true }
     - { year: 2024, term: U, url: "https://nyu-mll.github.io/nyu-ai-school-2024/" }
     - { year: 2023, term: U, url: "https://nyu-mll.github.io/nyu-ai-school-2023/" }
     - { year: 2022, term: W, url: "https://nyu-mll.github.io/nyu-ai-school-2022/" }
-    - { year: 2022, term: W, url: "https://www.youtube.com/playlist?list=PLK-WVcT88mQ7IaaKl6eNORxhi1S0J0VX2", video: true }
-    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLK-WVcT88mQ5jDsQeEe80i0IKojvP3J_z", video: true }
 
 - id: uchicago-cmsc-35300
   university: uchicago
@@ -702,11 +702,11 @@
   topics: [math-for-ml, machine-learning]
   level: intermediate
   editions:
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLcwJ7lE9nSHNy5cAZvIHFstwM37ztUXXB", video: true }
     - { year: 2025, term: F, url: "https://willett.psd.uchicago.edu/teaching/mathematical-foundations-of-machine-learning/" }
     - { year: 2020, term: F, url: "https://willett.psd.uchicago.edu/teaching/mathematical-foundations-of-machine-learning-fall-2020/" }
     - { year: 2019, term: F, url: "https://willett.psd.uchicago.edu/teaching/fall-2019-mathematical-foundations-of-machine-learning/" }
     - { year: 2019, term: W, url: "https://willett.psd.uchicago.edu/teaching/winter-2019-computer-science-25300-35300-mathematical-foundations-of-machine-learning/" }
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLcwJ7lE9nSHNy5cAZvIHFstwM37ztUXXB", video: true }
 
 - id: uchicago-stat-37710
   university: uchicago

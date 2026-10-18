@@ -25,7 +25,8 @@ const TOPIC_WORDS: Record<string, string> = {
 const label = (year: number, term?: string, video = false) =>
   (video ? `YT${String(year).slice(-2)}` : `${year}`) + (term ?? '');
 const spoken = (year: number, term?: string) => (term ? `${TERM[term]} ${year}` : `${year}`);
-// Editions can be listed in any order in the YAML; show newest first, course pages before videos.
+// Editions can be listed in any order in the YAML; show lecture videos first, then course pages,
+// each newest first.
 const ordered = (list: typeof course.editions) =>
   [...list].sort((a, b) => b.year - a.year || (TERM_ORDER[a.term ?? ''] ?? 4) - (TERM_ORDER[b.term ?? ''] ?? 4));
 const sites = ordered(course.editions.filter((e) => !e.video));
@@ -43,13 +44,13 @@ const searchText = [
   <h3 class="course-title">{heading}</h3>
   <p class="course-description">{course.description}</p>
   <div class="course-links">
-    {sites.map((e) => (
-      <a href={e.url} class="course-link" target="_blank" rel="noopener noreferrer"
-         aria-label={`${label(e.year, e.term)}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term)}</a>
-    ))}
     {videos.map((e) => (
       <a href={e.url} class="course-link video-link" target="_blank" rel="noopener noreferrer"
          aria-label={`${label(e.year, e.term, true)}, lecture videos, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term, true)}</a>
+    ))}
+    {sites.map((e) => (
+      <a href={e.url} class="course-link" target="_blank" rel="noopener noreferrer"
+         aria-label={`${label(e.year, e.term)}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term)}</a>
     ))}
   </div>
 </article>

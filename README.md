@@ -92,7 +92,7 @@ A new year of an existing course is one line under its `editions`:
 
 - `term` is optional: `W` Winter, `S` Spring, `U` Summer, `F` Fall. The button shows it after the year, e.g. `2026S`.
 - `video: true` marks a lecture-video link; it shows as a red `YT25`-style button.
-- Editions can be listed in any order; the page shows them newest first.
+- Editions can be listed in any order; the page shows lecture videos first, then course pages, each newest first.
 - Every URL must start with `https://`, and a description can be at most 150 characters (so every card keeps the same four-line layout).
 - `topics` (up to three) and `level` (`intro`, `intermediate`, `advanced`) use the fixed lists
   at the top of `courses.yaml`.
