@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  course: CollectionEntry<'courses'>['data'];
+  universityName: string;
+}
+
+const { course, universityName } = Astro.props;
+const TERM: Record<string, string> = { S: 'Spring', F: 'Fall', W: 'Winter', U: 'Summer' };
+const TERM_ORDER: Record<string, number> = { F: 0, U: 1, S: 2, W: 3 }; // newest first within a year
+// Readable words and common abbreviations for each topic, so searches like "rl" or "nlp" match.
+const TOPIC_WORDS: Record<string, string> = {
+  'machine-learning': 'machine learning ml', 'deep-learning': 'deep learning dl neural networks',
+  nlp: 'nlp natural language processing', 'computer-vision': 'computer vision cv',
+  'reinforcement-learning': 'reinforcement learning rl', 'generative-models': 'generative models genai',
+  llms: 'llm llms large language models', 'learning-theory': 'learning theory',
+  'math-for-ml': 'mathematics math for ml', 'probabilistic-models': 'probabilistic models',
+  healthcare: 'healthcare medicine', biology: 'biology genomics', 'creative-ai': 'creative ai art',
+  'ai-foundations': 'ai artificial intelligence', 'data-science': 'data science',
+  programming: 'programming', multimodal: 'multimodal', mlops: 'mlops production',
+};
+
+// Buttons show at most five characters: course pages "2025" / "2025S", lecture videos "YT25" / "YT25S".
+const label = (year: number, term?: string, video = false) =>
+  (video ? `YT${String(year).slice(-2)}` : `${year}`) + (term ?? '');
+const spoken = (year: number, term?: string) => (term ? `${TERM[term]} ${year}` : `${year}`);
+// Editions can be listed in any order in the YAML; show newest first, course pages before videos.
+const ordered = (list: typeof course.editions) =>
+  [...list].sort((a, b) => b.year - a.year || (TERM_ORDER[a.term ?? ''] ?? 4) - (TERM_ORDER[b.term ?? ''] ?? 4));
+const sites = ordered(course.editions.filter((e) => !e.video));
+const videos = ordered(course.editions.filter((e) => e.video));
+
+const heading = course.code ? `${course.code}: ${course.title}` : course.title;
+const codes = [course.code, ...(course.aliases ?? [])].filter(Boolean) as string[];
+const searchText = [
+  heading, ...codes, ...codes.map((c) => c.replace(/[\s-]/g, '')), // "CS 285" also matches "cs285"
+  course.description, universityName, ...course.topics.map((t) => TOPIC_WORDS[t] ?? t),
+].join(' ').toLowerCase();
+---
+
+<article class="course-card" id={course.id} data-search={searchText}>
+  <h3 class="course-title">{heading}</h3>
+  <p class="course-description">{course.description}</p>
+  <div class="course-links">
+    {sites.map((e) => (
+      <a href={e.url} class="course-link" target="_blank" rel="noopener noreferrer"
+         aria-label={`${label(e.year, e.term)}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term)}</a>
+    ))}
+    {videos.map((e) => (
+      <a href={e.url} class="course-link video-link" target="_blank" rel="noopener noreferrer"
+         aria-label={`${label(e.year, e.term, true)}, lecture videos, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term, true)}</a>
+    ))}
+  </div>
+</article>

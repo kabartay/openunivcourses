@@ -1,0 +1,248 @@
+/* Free ML Courses: one stylesheet for the whole site. */
+
+:root {
+    --violet: #5a5fcf;   /* white text on it: 5.3:1 */
+    --purple: #6b3fa0;
+    --gradient: linear-gradient(135deg, var(--violet) 0%, var(--purple) 100%);
+    --video: linear-gradient(135deg, #c8323a, #a8232a);   /* white text on it: 5.3:1 or more */
+    --focus: #4338ca;
+    --ink: #1f2a37;
+    --muted: #556070;
+    --panel: rgba(255, 255, 255, 0.96);
+    --radius: 20px;
+    --shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--gradient);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.footer a:focus-visible, .legend a:focus-visible { outline-color: white; }
+
+.visually-hidden {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+    background: var(--panel);
+    border-radius: var(--radius);
+    padding: 40px 20px 32px;
+    box-shadow: var(--shadow);
+}
+.site-logo { display: block; margin: 0 auto 12px; border-radius: 16px; }
+.header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+.header p { font-size: 1.15rem; color: var(--muted); max-width: 620px; margin: 0 auto; }
+.header p + p { margin-top: 1.25rem; }
+
+.search-bar { margin: 28px auto 0; max-width: 520px; }
+.search-bar input {
+    width: 100%;
+    padding: 15px 22px;
+    font-size: 16px;
+    border: 1px solid rgba(90, 95, 207, 0.3);
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.search-bar input:focus { border-color: var(--violet); box-shadow: 0 12px 34px rgba(90, 95, 207, 0.3); }
+.search-bar input:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+/* Stats */
+.stats {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px 48px;
+    margin: 0 0 32px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.12);
+}
+.stat { text-align: center; color: white; }
+.stat-number { display: block; font-size: 2rem; font-weight: 700; line-height: 1.2; }
+.stat-label { font-size: 0.9rem; }
+
+/* University sections */
+.university-section {
+    margin-bottom: 32px;
+    background: var(--panel);
+    border-radius: var(--radius);
+    padding: 30px;
+    box-shadow: var(--shadow);
+    scroll-margin-top: 16px;
+}
+.university-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef0f4;
+}
+.university-logo {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    padding: 4px;
+    object-fit: contain;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.university-name { font-size: 1.7rem; font-weight: 700; line-height: 1.25; }
+.university-count { margin-left: auto; color: var(--muted); font-size: 0.9rem; white-space: nowrap; }
+
+/* Course cards */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 20px;
+}
+.course-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    border-left: 4px solid transparent;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    scroll-margin-top: 16px;
+}
+.course-card:hover,
+.course-card:target { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.13); border-left-color: var(--violet); }
+.course-title { font-size: 1.15rem; font-weight: 650; line-height: 1.4; margin-bottom: 10px; }
+.course-description { color: var(--muted); font-size: 0.95rem; line-height: 1.55; margin-bottom: 16px; flex-grow: 1; }
+
+.course-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.course-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 7px 15px;
+    background: var(--gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.course-link:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(90, 95, 207, 0.4); }
+.video-link { background: var(--video); }
+.video-link:hover { box-shadow: 0 8px 20px rgba(200, 50, 58, 0.4); }
+
+.no-results {
+    background: var(--panel);
+    border-radius: var(--radius);
+    padding: 28px;
+    text-align: center;
+    color: var(--muted);
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 8px;
+    padding: 28px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+}
+.footer a { color: white; font-weight: 600; }
+.footer-small { margin-top: 8px; font-size: 0.85rem; }
+
+@media (max-width: 768px) {
+    .header h1 { font-size: 2.2rem; }
+    .courses-grid { grid-template-columns: 1fr; }
+    .university-header { flex-wrap: wrap; gap: 12px 16px; }
+    .university-name { font-size: 1.4rem; }
+    .university-count { margin-left: 0; width: 100%; }
+}
+@media (max-width: 480px) {
+    .container { padding: 14px; }
+    .header h1 { font-size: 1.9rem; }
+    .university-section { padding: 20px; }
+    .course-card { padding: 20px; }
+    .course-link { padding: 6px 12px; font-size: 0.8rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+}
+
+/* Every card has the same rhythm, so the year pills line up across a row:
+   the title takes two lines and the description exactly four. */
+.course-title {
+    min-height: calc(2 * 1.4em);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.course-description {
+    flex-grow: 0;
+    height: calc(4 * 1.55em);
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* One card per row on phones: nothing to align, so show titles and descriptions in full. */
+@media (max-width: 768px) {
+    .course-title, .course-description { height: auto; min-height: 0; display: block; overflow: visible; -webkit-line-clamp: unset; line-clamp: unset; }
+}
+
+/* Pills read as equal buttons: one fixed width for every label (max five characters). */
+.course-link {
+    justify-content: center;
+    width: 4.6rem;
+    padding: 7px 0;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.01em;
+}
+@media (max-width: 480px) { .course-link { width: 4.2rem; padding: 6px 0; } }
+
+.legend { margin: -16px 0 28px; text-align: center; color: white; font-size: 0.9rem; }
+.legend strong { color: white; }
+.legend-video { font-weight: 700; text-decoration: underline; text-decoration-color: #ff9ea2; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+/* A general-purpose button (the 404 page); course pills keep their fixed width */
+.button {
+    display: inline-block;
+    padding: 10px 22px;
+    background: var(--gradient);
+    color: white;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+}
+.button:hover { box-shadow: 0 8px 20px rgba(90, 95, 207, 0.4); }

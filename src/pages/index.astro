@@ -1,0 +1,121 @@
+---
+import { readFileSync } from 'node:fs';
+import { getCollection } from 'astro:content';
+import yaml from 'js-yaml';
+import Base from '../layouts/Base.astro';
+import CourseCard from '../components/CourseCard.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+
+// getCollection() returns entries sorted by id; the list is curated, so restore the file order.
+// Paths are relative to the project root, where `astro build` runs.
+const fileOrder = (path: string) =>
+  new Map((yaml.load(readFileSync(path, 'utf8')) as { id: string }[]).map((e, i) => [e.id, i]));
+const byOrder = (order: Map<string, number>) => (a: { id: string }, b: { id: string }) =>
+  (order.get(a.id) ?? 0) - (order.get(b.id) ?? 0);
+const universities = (await getCollection('universities')).sort(byOrder(fileOrder('src/data/universities.yaml')));
+const courses = (await getCollection('courses')).sort(byOrder(fileOrder('src/data/courses.yaml')));
+
+const sections = universities
+  .map((u) => ({ uni: u.data, courses: courses.filter((c) => c.data.university.id === u.id).map((c) => c.data) }))
+  .filter((s) => s.courses.length > 0);
+
+const editions = courses.flatMap((c) => c.data.editions);
+const years = editions.map((e) => e.year);
+const stats = [
+  { value: courses.length, label: 'Courses' },
+  { value: sections.length, label: 'Universities' },
+  { value: editions.filter((e) => e.video).length, label: 'Lecture video sets' },
+  { value: `${Math.min(...years)}–${Math.max(...years)}`, label: 'Editions' },
+];
+const shorts = sections.map((s) => s.uni.short);
+const uniList = `${shorts.slice(0, -1).join(', ')} and ${shorts.at(-1)}`;
+const description = `${courses.length} free machine-learning courses from ${uniList}: lectures, notes and assignments, with every yearly edition linked.`;
+---
+
+<Base title="Free ML Courses from Top Universities" description={description}>
+  <div class="container">
+    <header class="header">
+      <img class="site-logo" src={`${base}images/logo.svg`} alt="" width="72" height="72" />
+      <h1>Free ML Courses</h1>
+      <p>Machine-learning courses from leading universities, gathered in one searchable page. Every course is free to follow online.</p>
+      <div class="search-bar">
+        <label for="search" class="visually-hidden">Search courses</label>
+        <input type="search" id="search" placeholder="Search courses, universities or topics…" autocomplete="off" />
+      </div>
+      <p class="visually-hidden" id="search-status" role="status" aria-live="polite"></p>
+    </header>
+
+    <ul class="stats" aria-label="Collection at a glance">
+      {stats.map((s) => (
+        <li class="stat"><span class="stat-number">{s.value}</span><span class="stat-label">{s.label}</span></li>
+      ))}
+    </ul>
+
+    <p class="legend">Each button opens a course page for that year; <span class="legend-video">red YT</span> buttons open the lecture videos. Letters mark the term: <strong>W</strong> Winter, <strong>S</strong> Spring, <strong>U</strong> Summer, <strong>F</strong> Fall. Links open in a new tab.</p>
+
+    <main id="courses">
+      {sections.map(({ uni, courses }) => (
+        <section class="university-section" id={uni.id} aria-labelledby={`${uni.id}-name`}>
+          <div class="university-header">
+            <img class="university-logo" src={`${base}images/logos/${uni.logo}`} alt="" width="60" height="60" loading="lazy" />
+            <h2 class="university-name" id={`${uni.id}-name`}>{uni.name}</h2>
+            <span class="university-count">{courses.length} {courses.length === 1 ? 'course' : 'courses'}</span>
+          </div>
+          <div class="courses-grid">
+            {courses.map((course) => <CourseCard course={course} universityName={`${uni.name} ${uni.short}`} />)}
+          </div>
+        </section>
+      ))}
+      <p class="no-results" id="no-results" hidden>No courses match your search.</p>
+    </main>
+
+    <footer class="footer">
+      <p>Know a free course that belongs here? <a href="https://github.com/kabartay/openunivcourses/issues/new?template=suggest-a-course.yml">Suggest it on GitHub</a>.</p>
+      <p class="footer-small">Course content belongs to its universities and lecturers; this page only links to it. · <a href="https://github.com/kabartay/openunivcourses">Source</a> · MIT License</p>
+    </footer>
+  </div>
+
+  <script>
+    // Filter cards by the search box; sections with no matching card hide entirely.
+    const input = document.getElementById('search') as HTMLInputElement;
+    const sections = [...document.querySelectorAll<HTMLElement>('.university-section')];
+    const empty = document.getElementById('no-results') as HTMLElement;
+    const status = document.getElementById('search-status') as HTMLElement;
+    const total = document.querySelectorAll('.course-card').length;
+    const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+    // Short terms ("rl", "ml") match whole words only, so "rl" does not match "real-world".
+    const matcher = (term: string) => {
+      if (term.length > 3) return (text: string) => text.includes(term);
+      const re = new RegExp(`(^|[^a-z0-9])${escape(term)}($|[^a-z0-9])`);
+      return (text: string) => re.test(text);
+    };
+
+    function apply() {
+      const tests = input.value.toLowerCase().split(/\s+/).filter(Boolean).map(matcher);
+      let shown = 0;
+      for (const section of sections) {
+        let visible = 0;
+        for (const card of section.querySelectorAll<HTMLElement>('.course-card')) {
+          const text = card.dataset.search ?? '';
+          const match = tests.every((test) => test(text));
+          card.hidden = !match;
+          if (match) visible++;
+        }
+        section.hidden = visible === 0;
+        shown += visible;
+      }
+      empty.hidden = shown > 0;
+      status.textContent = tests.length ? `${shown} of ${total} courses shown` : '';
+      // Keep the search in the address bar, so it survives a reload and can be shared: ?q=transformers
+      const url = new URL(location.href);
+      input.value.trim() ? url.searchParams.set('q', input.value.trim()) : url.searchParams.delete('q');
+      history.replaceState(null, '', url);
+    }
+
+    input.addEventListener('input', apply);
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) { input.value = q; apply(); }
+  </script>
+</Base>

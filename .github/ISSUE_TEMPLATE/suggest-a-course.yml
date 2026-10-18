@@ -1,0 +1,36 @@
+name: Suggest a course
+description: Propose a free university machine-learning course, or a new edition of one already listed.
+title: "Course: "
+labels: [course-suggestion]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course
+      description: Code and name, as the university writes it.
+      placeholder: "Stanford CS336: Language Modeling from Scratch"
+    validations:
+      required: true
+  - type: input
+    id: university
+    attributes:
+      label: University
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: One per line. Say the year and term for each, and mark lecture-video links.
+      placeholder: |
+        2025 Spring: https://...
+        2025 Spring (videos): https://youtube.com/playlist?list=...
+    validations:
+      required: true
+  - type: checkboxes
+    id: free
+    attributes:
+      label: Free to access
+      options:
+        - label: The lectures or materials can be opened without an account or payment.
+          required: true
