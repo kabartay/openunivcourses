@@ -576,19 +576,6 @@
     - { year: 2020, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa20/" }
     - { year: 2019, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa19/" }
 
-- id: berkeley-cs-182
-  university: berkeley
-  code: CS 182
-  aliases: [CS 282A]
-  title: Designing, Visualizing and Understanding DNNs
-  description: "Deep neural networks: training, optimization, CNNs, RNNs, attention and transformers, generative models, and visualizing what networks learn."
-  topics: [deep-learning]
-  level: intermediate
-  editions:
-    - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A", video: true }
-    - { year: 2022, term: S, url: "https://cs182sp22.github.io/" }
-    - { year: 2021, term: S, url: "https://cs182sp21.github.io/" }
-
 - id: berkeley-data-c8
   university: berkeley
   code: DATA C8
@@ -649,6 +636,19 @@
     - { year: 2021, term: S, url: "https://sp21.datastructur.es/" }
     - { year: 2020, term: F, url: "https://fa20.datastructur.es/" }
     - { year: 2019, term: S, url: "https://sp19.datastructur.es/" }
+
+- id: berkeley-cs-182
+  university: berkeley
+  code: CS 182
+  aliases: [CS 282A]
+  title: Designing, Visualizing and Understanding DNNs
+  description: "Deep neural networks: training, optimization, CNNs, RNNs, attention and transformers, generative models, and visualizing what networks learn."
+  topics: [deep-learning]
+  level: intermediate
+  editions:
+    - { year: 2021, term: S, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVmKkQHucjPAoRtIJYt8a5A", video: true }
+    - { year: 2022, term: S, url: "https://cs182sp22.github.io/" }
+    - { year: 2021, term: S, url: "https://cs182sp21.github.io/" }
 
 - id: cmu-10-701
   university: cmu
