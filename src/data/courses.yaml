@@ -276,6 +276,32 @@
     - { year: 2025, term: S, url: "https://cs336.stanford.edu/spring2025/" }
     - { year: 2024, term: S, url: "https://cs336.stanford.edu/spring2024/index.html" }
 
+- id: stanford-cs324
+  university: stanford
+  code: CS324
+  title: Large Language Models
+  description: Presents fundamentals about the modeling, theory, ethics, systems aspects and advances of LLMs.
+  topics: [llms, nlp]
+  level: advanced
+  editions:
+    - { year: 2023, term: W, url: "https://stanford-cs324.github.io/winter2023/" }
+    - { year: 2022, term: W, url: "https://stanford-cs324.github.io/winter2022/" }
+
+- id: stanford-cs25
+  university: stanford
+  code: CS25
+  title: Transformers United
+  description: Presents latest breakthroughs in AI, from large language models like GPT to applications in art, biology, and robotics.
+  topics: [llms, deep-learning]
+  level: intermediate
+  editions:
+    - { year: 2026, term: S, url: "https://web.stanford.edu/class/cs25/" }
+    - { year: 2025, term: S, url: "https://web.stanford.edu/class/cs25/past/cs25-v5/" }
+    - { year: 2024, term: S, url: "https://web.stanford.edu/class/cs25/past/cs25-v4/" }
+    - { year: 2023, term: F, url: "https://web.stanford.edu/class/cs25/past/cs25-v3/" }
+    - { year: 2023, term: W, url: "https://web.stanford.edu/class/cs25/past/cs25-v2/" }
+    - { year: 2021, term: F, url: "https://web.stanford.edu/class/cs25/past/cs25-v1/" }
+
 - id: stanford-cs221
   university: stanford
   code: CS221
@@ -304,15 +330,69 @@
     - { year: 2020, term: S, url: "https://stanford-cs221.github.io/spring2020/" }
     - { year: 2019, term: F, url: "https://stanford-cs221.github.io/autumn2019/" }
 
+- id: stanford-cs329s
+  university: stanford
+  code: CS329S
+  title: Machine Learning Systems Design
+  description: Provides an iterative framework for developing real-world machine learning systems that are deployable, reliable, and scalable.
+  topics: [mlops, machine-learning]
+  level: intermediate
+  editions:
+    - { year: 2022, term: W, url: "https://stanford-cs329s.github.io/" }
+    - { year: 2021, term: W, url: "https://stanford-cs329s.github.io/2021/" }
+
+- id: stanford-cs224g
+  university: stanford
+  code: CS224G
+  title: Building Generative AI Applications
+  description: "Project-based course on building production-ready AI applications: reasoning models, agentic workflows and responsible AI development."
+  topics: [llms, generative-models]
+  level: intermediate
+  editions:
+    - { year: 2026, term: W, url: "https://web.stanford.edu/class/cs224g/" }
+
+- id: stanford-cs149
+  university: stanford
+  code: CS149
+  title: Parallel Computing
+  description: Provides a deep understanding of the fundamental principles and engineering trade-offs involved in designing modern parallel computing systems.
+  topics: [programming]
+  level: intermediate
+  editions:
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp", video: true }
+    - { year: 2025, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall25" }
+    - { year: 2024, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall24" }
+    - { year: 2023, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall23" }
+    - { year: 2022, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall22" }
+    - { year: 2021, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall21" }
+    - { year: 2020, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall20" }
+    - { year: 2019, term: F, url: "https://gfxcourses.stanford.edu/cs149/fall19/" }
+
+- id: stanford-cs107
+  university: stanford
+  code: CS107
+  title: Computer Organization and Systems
+  description: "Programming in C and machine-level code: data representation, compilation, optimization, computer arithmetic, memory, debugging and performance."
+  topics: [programming]
+  level: intro
+  editions:
+    - { year: 2026, term: F, url: "https://web.stanford.edu/class/cs107/" }
+    - { year: 2025, term: F, url: "https://web.stanford.edu/class/archive/cs/cs107/cs107.1262/" }
+    - { year: 2024, term: W, url: "https://web.stanford.edu/class/archive/cs/cs107/cs107.1244/" }
+    - { year: 2023, term: S, url: "https://web.stanford.edu/class/archive/cs/cs107/cs107.1236/" }
+    - { year: 2022, term: W, url: "https://web.stanford.edu/class/archive/cs/cs107/cs107.1224/" }
+    - { year: 2021, term: F, url: "https://web.stanford.edu/class/archive/cs/cs107/cs107.1222/" }
+
 - id: stanford-cs228
   university: stanford
   code: CS228
   title: Probabilistic Graphical Models
-  description: "Representation, inference and learning in probabilistic graphical models: Bayesian networks, undirected models, exact and approximate inference."
+  description: Probabilistic graphical models for representing complex domains with probability distributions, with applications in ML, vision, NLP and biology.
   topics: [probabilistic-models, machine-learning]
   level: advanced
   editions:
-    - { year: 2024, url: "https://ermongroup.github.io/cs228/" }
+    - { year: 2023, term: W, url: "https://ermongroup.github.io/cs228/" }
+    - { year: 2017, term: W, url: "https://cs.stanford.edu/~ermon/cs228/index.html" }
 
 - id: berkeley-cs-194-080
   university: berkeley
