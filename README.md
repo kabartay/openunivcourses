@@ -34,11 +34,11 @@ Type in the search bar to filter by course name, university or topic.
 
 ## What's in it
 
-**49 courses from 6 universities**, with 352 yearly editions from 2011 to 2026, 87 of them lecture-video playlists.
+**55 courses from 6 universities**, with 367 yearly editions from 2005 to 2026, 88 of them lecture-video playlists.
 
 | University | Courses |
 | --- | --- |
-| Massachusetts Institute of Technology | 9 |
+| Massachusetts Institute of Technology | 15 |
 | Stanford University | 15 |
 | University of California, Berkeley | 10 |
 | Carnegie Mellon University | 9 |
