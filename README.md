@@ -6,7 +6,7 @@
 
 <p align="center">
   <strong>Free machine-learning courses from leading universities, in one searchable page.</strong><br>
-  Lectures, notes and assignments from MIT, Stanford, Berkeley, CMU, NYU and UChicago, every yearly edition linked.
+  Lectures, notes and assignments from MIT, Stanford, Berkeley, CMU, NYU, UChicago and Caltech, every yearly edition linked.
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@ Type in the search bar to filter by course name, university or topic.
 
 ## What's in it
 
-**55 courses from 6 universities**, with 367 yearly editions from 2005 to 2026, 88 of them lecture-video playlists.
+**58 courses from 7 universities**, with 371 yearly editions from 2005 to 2026, 89 of them lecture-video playlists.
 
 | University | Courses |
 | --- | --- |
@@ -44,12 +44,13 @@ Type in the search bar to filter by course name, university or topic.
 | Carnegie Mellon University | 9 |
 | New York University | 3 |
 | University of Chicago | 3 |
+| California Institute of Technology | 3 |
 
 Topics covered: machine learning, deep learning, natural language processing, computer
 vision, reinforcement learning, generative models and foundation models, probabilistic
 graphical models, statistical learning theory, the mathematics of ML, ML systems, parallel computing and
-computer systems, and ML for healthcare,
-genomics and the life sciences.
+computer systems, ML for healthcare,
+genomics and the life sciences, and hands-on use of AI tools.
 
 Examples: MIT 6.S191 *Introduction to Deep Learning*, Stanford CS231n *Deep Learning for
 Computer Vision*, Stanford CS336 *Language Modeling from Scratch*, Berkeley CS 285 *Deep

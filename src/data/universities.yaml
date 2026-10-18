@@ -36,3 +36,9 @@
   short: UChicago
   logo: uchicago.jpg
   website: https://www.uchicago.edu
+
+- id: caltech
+  name: California Institute of Technology
+  short: Caltech
+  logo: caltech.svg
+  website: https://www.caltech.edu

@@ -885,3 +885,35 @@
   editions:
     - { year: 2024, url: "https://mcallester.github.io/ttic-31230/" }
     - { year: 2020, url: "https://adam-dziedzic.com/ttic-31230/" }
+
+- id: caltech-cs-155
+  university: caltech
+  code: CS 155
+  aliases: [CNS 155, EE 155]
+  title: Machine Learning and Data Mining
+  description: Covers popular machine learning and data mining methods, practical applications, foundational concepts and recent research developments.
+  topics: [machine-learning, data-science]
+  level: intermediate
+  editions:
+    - { year: 2025, term: W, url: "https://sites.google.com/view/cs155machinelearningdatam/" }
+
+- id: caltech-cs-156
+  university: caltech
+  code: CS 156
+  aliases: [CNS 156, EE 156]
+  title: Learning from Data
+  description: Machine learning theory, algorithms and applications, balancing mathematical foundations and heuristic approaches with practical implementation.
+  topics: [machine-learning, learning-theory]
+  level: intro
+  editions:
+    - { year: 2012, term: S, url: "https://www.youtube.com/playlist?list=PLD63A284B7615313A", video: true }
+    - { year: 2012, term: S, url: "https://work.caltech.edu/telecourse.html" }
+
+- id: caltech-ai-tools-for-everyone-a-hands-on-learning-lab
+  university: caltech
+  title: "AI Tools for Everyone: A Hands-On Learning Lab"
+  description: "Hands-on with ChatGPT, Claude, Gemini, NotebookLM and Perplexity for writing, research and design: prompting, assistants and integrations."
+  topics: [llms, ai-foundations]
+  level: intro
+  editions:
+    - { year: 2026, term: F, url: "https://ctme.caltech.edu/artificial-intelligence-tools-for-everyone-online.html" }
