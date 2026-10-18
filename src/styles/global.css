@@ -246,3 +246,22 @@ a { color: inherit; }
     font-weight: 600;
 }
 .button:hover { box-shadow: 0 8px 20px rgba(90, 95, 207, 0.4); }
+
+/* Season symbols on the buttons; tints keep at least 3.8:1 against the violet and red buttons */
+/* One character wide, centred on the height of the digits. */
+.season {
+    display: inline-block;
+    width: 1em;
+    margin-left: 0.15em;
+    font-size: 0.9em;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -0.06em;
+}
+.season--w { color: #bfe4ff; }   /* ❄ winter */
+.season--s { color: #a8f0b4; }   /* ✿ spring */
+.season--u { color: #ffd84d; }   /* ☀ summer */
+.season--f { font-size: 0.8em; } /* 🍁 fall: emoji keeps its own colours, and draws larger than the text glyphs */
+.legend .season { margin: 0 0.15em 0 0; }

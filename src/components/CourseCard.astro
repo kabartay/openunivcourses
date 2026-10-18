@@ -21,9 +21,11 @@ const TOPIC_WORDS: Record<string, string> = {
   programming: 'programming', multimodal: 'multimodal', mlops: 'mlops production',
 };
 
-// Buttons show at most five characters: course pages "2025" / "2025S", lecture videos "YT25" / "YT25S".
-const label = (year: number, term?: string, video = false) =>
-  (video ? `YT${String(year).slice(-2)}` : `${year}`) + (term ?? '');
+// Buttons show the year ("2025", or "YT25" for lecture videos) and a season symbol for the term.
+// U+FE0E asks for the text form of ❄ and ☀, so CSS can colour them; 🍁 has only an emoji form.
+const SEASON: Record<string, string> = { W: '\u2744\uFE0E', S: '\u273F', U: '\u2600\uFE0E', F: '\u{1F341}' };
+const yearText = (year: number, video = false) => (video ? `YT${String(year).slice(-2)}` : `${year}`);
+const label = (year: number, term?: string, video = false) => yearText(year, video) + (term ?? '');
 const spoken = (year: number, term?: string) => (term ? `${TERM[term]} ${year}` : `${year}`);
 // Editions can be listed in any order in the YAML; show lecture videos first, then course pages,
 // each newest first.
@@ -46,11 +48,15 @@ const searchText = [
   <div class="course-links">
     {videos.map((e) => (
       <a href={e.url} class="course-link video-link" target="_blank" rel="noopener noreferrer"
-         aria-label={`${label(e.year, e.term, true)}, lecture videos, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term, true)}</a>
+         aria-label={`${yearText(e.year, true)} ${e.term ? TERM[e.term] : ''}, lecture videos, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`.replace('  ', ' ')}>
+        {yearText(e.year, true)}{e.term && <span class={`season season--${e.term.toLowerCase()}`} aria-hidden="true">{SEASON[e.term]}</span>}
+      </a>
     ))}
     {sites.map((e) => (
       <a href={e.url} class="course-link" target="_blank" rel="noopener noreferrer"
-         aria-label={`${label(e.year, e.term)}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`}>{label(e.year, e.term)}</a>
+         aria-label={`${yearText(e.year)} ${e.term ? TERM[e.term] : ''}, course page, ${spoken(e.year, e.term)}, ${heading} (opens in a new tab)`.replace('  ', ' ')}>
+        {yearText(e.year)}{e.term && <span class={`season season--${e.term.toLowerCase()}`} aria-hidden="true">{SEASON[e.term]}</span>}
+      </a>
     ))}
   </div>
 </article>
