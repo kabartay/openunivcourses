@@ -321,19 +321,33 @@
     - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1194/" }
     - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1184/" }
 
-- id: stanford-cs236
+- id: stanford-cs221
   university: stanford
-  code: CS236
-  title: Deep Generative Models
-  description: "Probabilistic foundations of deep generative models: VAEs, GANs, autoregressive, normalizing-flow, energy-based and diffusion models."
-  topics: [generative-models, deep-learning, probabilistic-models]
-  level: advanced
+  code: CS221
+  title: "Artificial Intelligence: Principles and Techniques"
+  description: "Foundations of AI systems: machine learning, search, Markov decision processes, games, constraint satisfaction and logic."
+  topics: [ai-foundations, machine-learning]
+  level: intro
   editions:
-    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8", video: true }
-    - { year: 2023, term: F, url: "https://deepgenerativemodels.github.io/" }
-    - { year: 2021, term: F, url: "https://deepgenerativemodels.github.io/2021/" }
-    - { year: 2019, term: F, url: "https://deepgenerativemodels.github.io/2019/" }
-    - { year: 2018, term: F, url: "https://deepgenerativemodels.github.io/2018/" }
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN", video: true }
+    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2", video: true }
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX", video: true }
+    - { year: 2026, term: F, url: "https://stanford-cs221.github.io/autumn2026/" }
+    - { year: 2026, term: S, url: "https://stanford-cs221.github.io/spring2026/" }
+    - { year: 2025, term: F, url: "https://stanford-cs221.github.io/autumn2025/" }
+    - { year: 2025, term: S, url: "https://stanford-cs221.github.io/spring2025/" }
+    - { year: 2024, term: F, url: "https://stanford-cs221.github.io/autumn2024/" }
+    - { year: 2024, term: S, url: "https://stanford-cs221.github.io/spring2024/" }
+    - { year: 2023, term: F, url: "https://stanford-cs221.github.io/autumn2023/" }
+    - { year: 2023, term: S, url: "https://stanford-cs221.github.io/spring2023/" }
+    - { year: 2022, term: F, url: "https://stanford-cs221.github.io/autumn2022/" }
+    - { year: 2022, term: S, url: "https://stanford-cs221.github.io/spring2022/" }
+    - { year: 2021, term: F, url: "https://stanford-cs221.github.io/autumn2021/" }
+    - { year: 2021, term: S, url: "https://stanford-cs221.github.io/spring2021/" }
+    - { year: 2021, term: W, url: "https://stanford-cs221.github.io/winter2021/" }
+    - { year: 2020, term: F, url: "https://stanford-cs221.github.io/autumn2020/" }
+    - { year: 2020, term: S, url: "https://stanford-cs221.github.io/spring2020/" }
+    - { year: 2019, term: F, url: "https://stanford-cs221.github.io/autumn2019/" }
 
 - id: stanford-cs336
   university: stanford
@@ -375,33 +389,19 @@
     - { year: 2023, term: W, url: "https://web.stanford.edu/class/cs25/past/cs25-v2/" }
     - { year: 2021, term: F, url: "https://web.stanford.edu/class/cs25/past/cs25-v1/" }
 
-- id: stanford-cs221
+- id: stanford-cs236
   university: stanford
-  code: CS221
-  title: "Artificial Intelligence: Principles and Techniques"
-  description: "Foundations of AI systems: machine learning, search, Markov decision processes, games, constraint satisfaction and logic."
-  topics: [ai-foundations, machine-learning]
-  level: intro
+  code: CS236
+  title: Deep Generative Models
+  description: "Probabilistic foundations of deep generative models: VAEs, GANs, autoregressive, normalizing-flow, energy-based and diffusion models."
+  topics: [generative-models, deep-learning, probabilistic-models]
+  level: advanced
   editions:
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMeDqwS1yFl3j3sR_-MQNEN", video: true }
-    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOca_Ovz1DvdtWuz8BfSWL2", video: true }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX", video: true }
-    - { year: 2026, term: F, url: "https://stanford-cs221.github.io/autumn2026/" }
-    - { year: 2026, term: S, url: "https://stanford-cs221.github.io/spring2026/" }
-    - { year: 2025, term: F, url: "https://stanford-cs221.github.io/autumn2025/" }
-    - { year: 2025, term: S, url: "https://stanford-cs221.github.io/spring2025/" }
-    - { year: 2024, term: F, url: "https://stanford-cs221.github.io/autumn2024/" }
-    - { year: 2024, term: S, url: "https://stanford-cs221.github.io/spring2024/" }
-    - { year: 2023, term: F, url: "https://stanford-cs221.github.io/autumn2023/" }
-    - { year: 2023, term: S, url: "https://stanford-cs221.github.io/spring2023/" }
-    - { year: 2022, term: F, url: "https://stanford-cs221.github.io/autumn2022/" }
-    - { year: 2022, term: S, url: "https://stanford-cs221.github.io/spring2022/" }
-    - { year: 2021, term: F, url: "https://stanford-cs221.github.io/autumn2021/" }
-    - { year: 2021, term: S, url: "https://stanford-cs221.github.io/spring2021/" }
-    - { year: 2021, term: W, url: "https://stanford-cs221.github.io/winter2021/" }
-    - { year: 2020, term: F, url: "https://stanford-cs221.github.io/autumn2020/" }
-    - { year: 2020, term: S, url: "https://stanford-cs221.github.io/spring2020/" }
-    - { year: 2019, term: F, url: "https://stanford-cs221.github.io/autumn2019/" }
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rPOWA-omMM6STXaWW4FvJT8", video: true }
+    - { year: 2023, term: F, url: "https://deepgenerativemodels.github.io/" }
+    - { year: 2021, term: F, url: "https://deepgenerativemodels.github.io/2021/" }
+    - { year: 2019, term: F, url: "https://deepgenerativemodels.github.io/2019/" }
+    - { year: 2018, term: F, url: "https://deepgenerativemodels.github.io/2018/" }
 
 - id: stanford-cs329s
   university: stanford
