@@ -492,28 +492,21 @@
     - { year: 2020, term: S, url: "https://sites.google.com/view/berkeley-cs294-158-sp20/home" }
     - { year: 2019, term: S, url: "https://sites.google.com/view/berkeley-cs294-158-sp19/home" }
 
-- id: berkeley-cs-285
+- id: berkeley-cs-288
   university: berkeley
-  code: CS 285
-  aliases: [CS 185, CS 294-112]
-  title: Deep Reinforcement Learning
-  description: "Deep reinforcement learning: imitation learning, policy gradients, actor-critic and value-based methods, model-based RL and offline RL."
-  topics: [reinforcement-learning, deep-learning]
+  code: CS 288
+  title: Natural Language Processing
+  description: "Graduate NLP course: language modeling, word representations, sequence models, transformers and large language models."
+  topics: [nlp, llms]
   level: advanced
   editions:
-    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps", video: true }
-    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfX7MaC6C3HcdOf1g337dlC9", video: true }
-    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfXxKgI1GgyV1B_Xa0DxE5eH", video: true }
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc", video: true }
-    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A", video: true }
-    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37", video: true }
-    - { year: 2017, term: S, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX", video: true }
-    - { year: 2026, term: S, url: "https://rail.eecs.berkeley.edu/deeprlcourse/" }
-    - { year: 2023, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/" }
-    - { year: 2022, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa22/" }
-    - { year: 2021, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/" }
-    - { year: 2020, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa20/" }
-    - { year: 2019, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa19/" }
+    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLnocShPlK-Fv9YZIX7qdOyc2GJqnT3D-8", video: true }
+    - { year: 2026, term: S, url: "https://cal-cs288.github.io/sp26/" }
+    - { year: 2024, term: F, url: "https://cal-cs288.github.io/fa24/" }
+    - { year: 2023, term: S, url: "https://cal-cs288.github.io/sp23/" }
+    - { year: 2022, term: S, url: "https://cal-cs288.github.io/sp22/" }
+    - { year: 2021, term: S, url: "https://cal-cs288.github.io/sp21/" }
+    - { year: 2020, term: S, url: "https://cal-cs288.github.io/sp20/" }
 
 - id: berkeley-cs-188
   university: berkeley
@@ -560,21 +553,28 @@
     - { year: 2018, term: S, url: "https://eecs189.org/sp18/" }
     - { year: 2017, url: "https://people.eecs.berkeley.edu/~jrs/189s17/" }
 
-- id: berkeley-cs-288
+- id: berkeley-cs-285
   university: berkeley
-  code: CS 288
-  title: Natural Language Processing
-  description: "Graduate NLP course: language modeling, word representations, sequence models, transformers and large language models."
-  topics: [nlp, llms]
+  code: CS 285
+  aliases: [CS 185, CS 294-112]
+  title: Deep Reinforcement Learning
+  description: "Deep reinforcement learning: imitation learning, policy gradients, actor-critic and value-based methods, model-based RL and offline RL."
+  topics: [reinforcement-learning, deep-learning]
   level: advanced
   editions:
-    - { year: 2026, term: S, url: "https://www.youtube.com/playlist?list=PLnocShPlK-Fv9YZIX7qdOyc2GJqnT3D-8", video: true }
-    - { year: 2026, term: S, url: "https://cal-cs288.github.io/sp26/" }
-    - { year: 2024, term: F, url: "https://cal-cs288.github.io/fa24/" }
-    - { year: 2023, term: S, url: "https://cal-cs288.github.io/sp23/" }
-    - { year: 2022, term: S, url: "https://cal-cs288.github.io/sp22/" }
-    - { year: 2021, term: S, url: "https://cal-cs288.github.io/sp21/" }
-    - { year: 2020, term: S, url: "https://cal-cs288.github.io/sp20/" }
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfVYGEGiAOMaOzzv41Jfm_Ps", video: true }
+    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfX7MaC6C3HcdOf1g337dlC9", video: true }
+    - { year: 2021, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfXxKgI1GgyV1B_Xa0DxE5eH", video: true }
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL_iWQOsE6TfURIIhCrlt-wj9ByIVpbfGc", video: true }
+    - { year: 2019, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwhWJpGazJ9VSj9CFMkb79A", video: true }
+    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIxJMR-j5A1mkxK26gh_qg37", video: true }
+    - { year: 2017, term: S, url: "https://www.youtube.com/playlist?list=PLkFD6_40KJIwTmSbCv9OVJB3YaO4sFwkX", video: true }
+    - { year: 2026, term: S, url: "https://rail.eecs.berkeley.edu/deeprlcourse/" }
+    - { year: 2023, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/" }
+    - { year: 2022, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa22/" }
+    - { year: 2021, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa21/" }
+    - { year: 2020, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa20/" }
+    - { year: 2019, term: F, url: "https://rail.eecs.berkeley.edu/deeprlcourse-fa19/" }
 
 - id: berkeley-cs-182
   university: berkeley
@@ -650,6 +650,25 @@
     - { year: 2020, term: F, url: "https://fa20.datastructur.es/" }
     - { year: 2019, term: S, url: "https://sp19.datastructur.es/" }
 
+- id: cmu-10-701
+  university: cmu
+  code: 10-701
+  title: Introduction to Machine Learning
+  description: "Graduate introduction to machine learning: supervised and unsupervised learning, probabilistic models, neural networks and core theory."
+  topics: [machine-learning, math-for-ml, probabilistic-models]
+  level: intermediate
+  editions:
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLsWN0V-b507g7dbQTUvFkKZEqdHR5Fh4P", video: true }
+    - { year: 2014, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsDZCVz2xS7LrExqidHpJM3B", video: true }
+    - { year: 2013, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsACP-WSqgaGLKQXD7HmN-gC", video: true }
+    - { year: 2024, url: "https://www.cs.cmu.edu/~hchai2/courses/10701/" }
+    - { year: 2023, term: F, url: "https://machinelearningcmu.github.io/F23-10701/" }
+    - { year: 2023, term: S, url: "https://www.cs.cmu.edu/~aarti/Class/10701_Spring23/" }
+    - { year: 2021, term: S, url: "https://www.cs.cmu.edu/~aarti/Class/10701_Spring21/" }
+    - { year: 2020, term: F, url: "https://www.cs.cmu.edu/~epxing/Class/10701-20/" }
+    - { year: 2013, url: "https://alex.smola.org/teaching/cmu2013-10-701/" }
+    - { year: 2011, term: S, url: "https://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" }
+
 - id: cmu-11-785
   university: cmu
   code: 11-785
@@ -674,6 +693,22 @@
     - { year: 2021, url: "https://deeplearning.cs.cmu.edu/S21/index.html" }
     - { year: 2020, term: F, url: "https://deeplearning.cs.cmu.edu/F20/index.html" }
     - { year: 2020, term: S, url: "https://deeplearning.cs.cmu.edu/S20/index.html" }
+
+- id: cmu-10-703
+  university: cmu
+  code: 10-703
+  title: Deep Reinforcement Learning
+  description: "Graduate deep reinforcement learning: bandits, value-based methods, policy gradients, model-based RL, imitation learning and RLHF."
+  topics: [reinforcement-learning, deep-learning]
+  level: advanced
+  editions:
+    - { year: 2026, term: F, url: "https://cmudeeprl.github.io/703website_f26/lectures/" }
+    - { year: 2025, term: F, url: "https://cmudeeprl.github.io/703website_f25/lectures/" }
+    - { year: 2024, term: F, url: "https://cmudeeprl.github.io/703website_f24/lectures/" }
+    - { year: 2023, term: F, url: "https://cmudeeprl.github.io/703website_f23/lectures/" }
+    - { year: 2022, term: F, url: "https://cmudeeprl.github.io/703website_f22/lectures/" }
+    - { year: 2021, term: F, url: "https://cmudeeprl.github.io/703website_f21/lectures/" }
+    - { year: 2020, term: F, url: "https://cmudeeprl.github.io/703website_f20/lectures/" }
 
 - id: cmu-11-611
   university: cmu
@@ -713,6 +748,22 @@
     - { year: 2023, term: F, url: "https://cmu-anlp.github.io/" }
     - { year: 2022, term: F, url: "https://www.phontron.com/class/anlp2022/" }
     - { year: 2021, term: F, url: "https://www.phontron.com/class/anlp2021/" }
+
+- id: cmu-11-777
+  university: cmu
+  code: 11-777
+  title: Multimodal Machine Learning
+  description: "Graduate course on learning from multiple modalities (language, vision, audio): representation, alignment, fusion, and multimodal generation."
+  topics: [multimodal, deep-learning]
+  level: advanced
+  editions:
+    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW", video: true }
+    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA", video: true }
+    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNup9YQs_TdLW7DQz-lda0G", video: true }
+    - { year: 2026, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2026/" }
+    - { year: 2023, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2023/" }
+    - { year: 2022, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2022/" }
+    - { year: 2020, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2020/" }
 
 - id: cmu-11-737
   university: cmu
@@ -755,57 +806,6 @@
   editions:
     - { year: 2025, url: "https://cmu-codegen.github.io/f2025/" }
     - { year: 2024, url: "https://cmu-codegen.github.io/s2024/" }
-
-- id: cmu-11-777
-  university: cmu
-  code: 11-777
-  title: Multimodal Machine Learning
-  description: "Graduate course on learning from multiple modalities (language, vision, audio): representation, alignment, fusion, and multimodal generation."
-  topics: [multimodal, deep-learning]
-  level: advanced
-  editions:
-    - { year: 2023, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisMYs8A5j7sj8YW1wHhoJSmW", video: true }
-    - { year: 2022, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNM7pbbevXKAbT_Xmub37fA", video: true }
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PL-Fhd_vrvisNup9YQs_TdLW7DQz-lda0G", video: true }
-    - { year: 2026, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2026/" }
-    - { year: 2023, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2023/" }
-    - { year: 2022, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2022/" }
-    - { year: 2020, term: F, url: "https://multicomp.cs.cmu.edu/mmml-course/fall2020/" }
-
-- id: cmu-10-701
-  university: cmu
-  code: 10-701
-  title: Introduction to Machine Learning
-  description: "Graduate introduction to machine learning: supervised and unsupervised learning, probabilistic models, neural networks and core theory."
-  topics: [machine-learning, math-for-ml, probabilistic-models]
-  level: intermediate
-  editions:
-    - { year: 2020, term: F, url: "https://www.youtube.com/playlist?list=PLsWN0V-b507g7dbQTUvFkKZEqdHR5Fh4P", video: true }
-    - { year: 2014, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsDZCVz2xS7LrExqidHpJM3B", video: true }
-    - { year: 2013, term: F, url: "https://www.youtube.com/playlist?list=PL7y-1rk2cCsACP-WSqgaGLKQXD7HmN-gC", video: true }
-    - { year: 2024, url: "https://www.cs.cmu.edu/~hchai2/courses/10701/" }
-    - { year: 2023, term: F, url: "https://machinelearningcmu.github.io/F23-10701/" }
-    - { year: 2023, term: S, url: "https://www.cs.cmu.edu/~aarti/Class/10701_Spring23/" }
-    - { year: 2021, term: S, url: "https://www.cs.cmu.edu/~aarti/Class/10701_Spring21/" }
-    - { year: 2020, term: F, url: "https://www.cs.cmu.edu/~epxing/Class/10701-20/" }
-    - { year: 2013, url: "https://alex.smola.org/teaching/cmu2013-10-701/" }
-    - { year: 2011, term: S, url: "https://www.cs.cmu.edu/~tom/10701_sp11/lectures.shtml" }
-
-- id: cmu-10-703
-  university: cmu
-  code: 10-703
-  title: Deep Reinforcement Learning
-  description: "Graduate deep reinforcement learning: bandits, value-based methods, policy gradients, model-based RL, imitation learning and RLHF."
-  topics: [reinforcement-learning, deep-learning]
-  level: advanced
-  editions:
-    - { year: 2026, term: F, url: "https://cmudeeprl.github.io/703website_f26/lectures/" }
-    - { year: 2025, term: F, url: "https://cmudeeprl.github.io/703website_f25/lectures/" }
-    - { year: 2024, term: F, url: "https://cmudeeprl.github.io/703website_f24/lectures/" }
-    - { year: 2023, term: F, url: "https://cmudeeprl.github.io/703website_f23/lectures/" }
-    - { year: 2022, term: F, url: "https://cmudeeprl.github.io/703website_f22/lectures/" }
-    - { year: 2021, term: F, url: "https://cmudeeprl.github.io/703website_f21/lectures/" }
-    - { year: 2020, term: F, url: "https://cmudeeprl.github.io/703website_f20/lectures/" }
 
 - id: nyu-csci-ua-0472
   university: nyu
