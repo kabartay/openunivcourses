@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="52" fill="#1d212b"/>
+  <!-- open book -->
+  <path d="M48 120 C78 108 106 112 128 128 C150 112 178 108 208 120 L208 196 C178 184 150 188 128 204 C106 188 78 184 48 196 Z"
+        fill="#f4f6fa"/>
+  <path d="M128 128 L128 204" stroke="#1d212b" stroke-width="6"/>
+  <path d="M68 140 C86 134 102 136 114 142 M68 158 C86 152 102 154 114 160 M142 142 C154 136 170 134 188 140 M142 160 C154 154 170 152 188 158"
+        stroke="#9aa6b8" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <!-- graduation cap -->
+  <path d="M128 40 L208 72 L128 104 L48 72 Z" fill="#f5b23a"/>
+  <path d="M84 86 L84 106 C100 118 156 118 172 106 L172 86 L128 104 Z" fill="#d9952a"/>
+  <path d="M200 76 L200 112" stroke="#f5b23a" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="200" cy="116" r="8" fill="#f5b23a"/>
+</svg>
