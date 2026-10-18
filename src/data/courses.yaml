@@ -241,6 +241,18 @@
     - { year: 2019, term: U, url: "https://cs229.stanford.edu/syllabus-summer2019.html" }
     - { year: 2018, term: F, url: "https://cs229.stanford.edu/syllabus-autumn2018.html" }
 
+- id: stanford-cs230
+  university: stanford
+  code: CS230
+  title: Deep Learning
+  description: Practical deep learning course covering neural networks, CNNs, RNNs, LSTM, Adam, Dropout, and deep learning project methodology.
+  topics: [deep-learning]
+  level: intro
+  editions:
+    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X", video: true }
+    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb", video: true }
+    - { year: 2025, term: F, url: "https://cs230.stanford.edu/" }
+
 - id: stanford-cs231n
   university: stanford
   code: CS231n
@@ -263,63 +275,6 @@
     - { year: 2017, term: S, url: "https://cs231n.stanford.edu/2017" }
     - { year: 2016, term: W, url: "https://cs231n.stanford.edu/2016" }
     - { year: 2015, term: W, url: "https://cs231n.stanford.edu/2015" }
-
-- id: stanford-cs224n
-  university: stanford
-  code: CS224n
-  title: Natural Language Processing with Deep Learning
-  description: Modern NLP techniques using deep learning, including word embeddings, RNNs, Transformers, and large language models.
-  topics: [nlp, deep-learning, llms]
-  level: intermediate
-  editions:
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D", video: true }
-    - { year: 2023, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4", video: true }
-    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ", video: true }
-    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z", video: true }
-    - { year: 2017, term: W, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6", video: true }
-    - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1264/" }
-    - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1254/" }
-    - { year: 2024, term: S, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/" }
-    - { year: 2024, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/" }
-    - { year: 2023, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/" }
-    - { year: 2022, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1224/" }
-    - { year: 2021, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/" }
-    - { year: 2020, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1204/" }
-    - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/" }
-    - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/" }
-    - { year: 2017, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1174/" }
-    - { year: 2015, term: F, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1162/" }
-
-- id: stanford-cs230
-  university: stanford
-  code: CS230
-  title: Deep Learning
-  description: Practical deep learning course covering neural networks, CNNs, RNNs, LSTM, Adam, Dropout, and deep learning project methodology.
-  topics: [deep-learning]
-  level: intro
-  editions:
-    - { year: 2025, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rNRRGdS0rBbXOUGA0wjdh1X", video: true }
-    - { year: 2018, term: F, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb", video: true }
-    - { year: 2025, term: F, url: "https://cs230.stanford.edu/" }
-
-- id: stanford-cs234
-  university: stanford
-  code: CS234
-  title: Reinforcement Learning
-  description: "Reinforcement learning: Markov decision processes, Q-learning with function approximation, policy gradients, exploration and offline RL."
-  topics: [reinforcement-learning]
-  level: intermediate
-  editions:
-    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX", video: true }
-    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u", video: true }
-    - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1264/" }
-    - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1254/" }
-    - { year: 2024, term: S, url: "https://web.stanford.edu/class/cs234/CS234Spr2024/index.html" }
-    - { year: 2023, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1234/" }
-    - { year: 2021, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1214/" }
-    - { year: 2020, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1204/" }
-    - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1194/" }
-    - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1184/" }
 
 - id: stanford-cs221
   university: stanford
@@ -348,6 +303,51 @@
     - { year: 2020, term: F, url: "https://stanford-cs221.github.io/autumn2020/" }
     - { year: 2020, term: S, url: "https://stanford-cs221.github.io/spring2020/" }
     - { year: 2019, term: F, url: "https://stanford-cs221.github.io/autumn2019/" }
+
+- id: stanford-cs224n
+  university: stanford
+  code: CS224n
+  title: Natural Language Processing with Deep Learning
+  description: Modern NLP techniques using deep learning, including word embeddings, RNNs, Transformers, and large language models.
+  topics: [nlp, deep-learning, llms]
+  level: intermediate
+  editions:
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D", video: true }
+    - { year: 2023, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rMFqRtEuo6SGjY4XbRIVRd4", video: true }
+    - { year: 2021, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ", video: true }
+    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOhcuXMZkNm7j3fVwBBY42z", video: true }
+    - { year: 2017, term: W, url: "https://www.youtube.com/playlist?list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6", video: true }
+    - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1264/" }
+    - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1254/" }
+    - { year: 2024, term: S, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1246/" }
+    - { year: 2024, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/" }
+    - { year: 2023, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/" }
+    - { year: 2022, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1224/" }
+    - { year: 2021, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1214/" }
+    - { year: 2020, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1204/" }
+    - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/" }
+    - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1184/" }
+    - { year: 2017, term: W, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1174/" }
+    - { year: 2015, term: F, url: "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1162/" }
+
+- id: stanford-cs234
+  university: stanford
+  code: CS234
+  title: Reinforcement Learning
+  description: "Reinforcement learning: Markov decision processes, Q-learning with function approximation, policy gradients, exploration and offline RL."
+  topics: [reinforcement-learning]
+  level: intermediate
+  editions:
+    - { year: 2024, term: S, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX", video: true }
+    - { year: 2019, term: W, url: "https://www.youtube.com/playlist?list=PLoROMvodv4rOSOPzutgyCTapiGlY2Nd8u", video: true }
+    - { year: 2026, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1264/" }
+    - { year: 2025, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1254/" }
+    - { year: 2024, term: S, url: "https://web.stanford.edu/class/cs234/CS234Spr2024/index.html" }
+    - { year: 2023, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1234/" }
+    - { year: 2021, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1214/" }
+    - { year: 2020, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1204/" }
+    - { year: 2019, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1194/" }
+    - { year: 2018, term: W, url: "https://web.stanford.edu/class/archive/cs/cs234/cs234.1184/" }
 
 - id: stanford-cs336
   university: stanford
