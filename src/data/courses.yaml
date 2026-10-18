@@ -137,6 +137,79 @@
   editions:
     - { year: 2020, url: "https://deeplearning.mit.edu/" }
 
+- id: mit-6-7960
+  university: mit
+  code: "6.7960"
+  title: Deep Learning
+  description: "Deep learning theory and applications: architectures, geometry, invariances, backpropagation, generalization, vision, NLP and robotics."
+  topics: [deep-learning]
+  level: advanced
+  editions:
+    - { year: 2024, term: F, url: "https://www.youtube.com/playlist?list=PLUl4u3cNGP63URZnh5iqBzDTDYPUTQT-8", video: true }
+    - { year: 2026, term: F, url: "https://deeplearning6-7960.github.io/" }
+    - { year: 2025, term: F, url: "https://deeplearning6-7960.github.io/2025/index.html" }
+    - { year: 2024, term: F, url: "https://phillipi.github.io/6.7960/" }
+
+- id: mit-6-8300
+  university: mit
+  code: "6.8300"
+  aliases: ["6.8301"]
+  title: Advances in Computer Vision
+  description: Fundamental and advanced computer vision, from early to high-level vision, including machine learning and convolutional networks for vision.
+  topics: [computer-vision, deep-learning]
+  level: advanced
+  editions:
+    - { year: 2026, term: S, url: "https://scenerepresentations.org/courses/2026/spring/advances-in-cv/" }
+    - { year: 2025, term: S, url: "https://scenerepresentations.org/courses/2025/spring/advances-in-cv/" }
+    - { year: 2024, term: S, url: "https://advances-in-vision.github.io/" }
+
+- id: mit-6-864
+  university: mit
+  code: "6.864"
+  aliases: ["6.806"]
+  title: Advanced Natural Language Processing
+  description: Syntactic, semantic and discourse processing, with traditional and deep learning methods for extraction, translation, dialogue and summarization.
+  topics: [nlp]
+  level: advanced
+  editions:
+    - { year: 2021, term: S, url: "https://www.mit.edu/~jda/teaching/6.864/sp21/" }
+    - { year: 2020, term: S, url: "https://www.mit.edu/~jda/teaching/6.864/sp20/" }
+    - { year: 2005, term: F, url: "https://ocw.mit.edu/courses/6-864-advanced-natural-language-processing-fall-2005/pages/syllabus/" }
+
+- id: mit-6-7920
+  university: mit
+  code: "6.7920"
+  aliases: ["6.7950"]
+  title: Reinforcement Learning
+  description: "Mathematical foundations of reinforcement learning: MDPs, dynamic programming, Q-learning, bandits and stochastic approximation."
+  topics: [reinforcement-learning, math-for-ml]
+  level: advanced
+  editions:
+    - { year: 2026, term: F, url: "https://web.mit.edu/6.7920/www/index.html" }
+    - { year: 2022, term: F, url: "https://web.mit.edu/6.7950/www/" }
+
+- id: mit-6-s980
+  university: mit
+  code: 6.S980
+  title: Machine Learning for Inverse Graphics
+  description: Covers fundamental and advanced techniques in this field at the intersection of computer vision, computer graphics, and geometric deep learning.
+  topics: [computer-vision, deep-learning]
+  level: advanced
+  editions:
+    - { year: 2023, term: F, url: "https://scenerepresentations.org/courses/2023/fall/inverse-graphics/" }
+    - { year: 2022, term: F, url: "https://scenerepresentations.org/courses/2022/fall/inverse-graphics/" }
+
+- id: mit-6-7810
+  university: mit
+  code: "6.7810"
+  aliases: ["6.438"]
+  title: Algorithms for Inference
+  description: Statistical inference with probabilistic graphical models, a foundation for machine learning, signal processing, AI, computer vision and control.
+  topics: [probabilistic-models, math-for-ml]
+  level: advanced
+  editions:
+    - { year: 2014, term: F, url: "https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/pages/syllabus/" }
+
 - id: stanford-cs229
   university: stanford
   code: CS229
