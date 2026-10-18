@@ -34,12 +34,12 @@ Type in the search bar to filter by course name, university or topic.
 
 ## What's in it
 
-**43 courses from 6 universities**, with 326 yearly editions from 2011 to 2026, 86 of them lecture-video playlists.
+**49 courses from 6 universities**, with 352 yearly editions from 2011 to 2026, 87 of them lecture-video playlists.
 
 | University | Courses |
 | --- | --- |
 | Massachusetts Institute of Technology | 9 |
-| Stanford University | 9 |
+| Stanford University | 15 |
 | University of California, Berkeley | 10 |
 | Carnegie Mellon University | 9 |
 | New York University | 3 |
@@ -47,7 +47,8 @@ Type in the search bar to filter by course name, university or topic.
 
 Topics covered: machine learning, deep learning, natural language processing, computer
 vision, reinforcement learning, generative models and foundation models, probabilistic
-graphical models, statistical learning theory, the mathematics of ML, and ML for healthcare,
+graphical models, statistical learning theory, the mathematics of ML, ML systems, parallel computing and
+computer systems, and ML for healthcare,
 genomics and the life sciences.
 
 Examples: MIT 6.S191 *Introduction to Deep Learning*, Stanford CS231n *Deep Learning for
